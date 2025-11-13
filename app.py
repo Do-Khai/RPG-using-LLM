@@ -23,9 +23,23 @@ async def health_check():
 @app.post("/api/v1/chat", tags=["LLM Generate"])
 async def chat_with_ollama(req: ChatRequest):
     """
-    Service nhận input từ backend
-    -> Gọi Ollama
-    -> Trả lại JSON story/quest/battle hợp lệ
+    Service nhận input từ backend, gọi đến LLM để sinh nội dung game và trả về JSON hợp lệ.
+
+    **Mô tả:**
+    - Endpoint này là cầu nối giữa backend game và model ngôn ngữ (LLM).
+    - Nó nhận vào trạng thái hiện tại của người chơi, tin nhắn/lệnh cuối cùng, và lịch sử chat.
+    - Dựa trên các thông tin đó, nó xây dựng một prompt hoàn chỉnh, gửi đến LLM, và nhận lại một JSON chứa diễn biến tiếp theo của game (story, quest, battle).
+
+    **Request Body:**
+
+    - `user_id` (str, **bắt buộc**): ID định danh duy nhất của người chơi.
+    - `message` (str, **bắt buộc**): Lệnh hoặc tin nhắn người chơi vừa gửi (ví dụ: "/start", "/choose 1").
+    - `regions` (List[str], **bắt buộc**): Danh sách tất cả các mã vùng đất có trong game.
+    - `current_stats` (Dict, **bắt buộc**): Dictionary chứa các chỉ số hiện tại của người chơi (level, hp, atk...).
+    - `next_stats` (Dict, **bắt buộc**): Dictionary chứa các chỉ số của người chơi ở level tiếp theo.
+    - `user_state` (Dict, **bắt buộc**): Dictionary chứa state tổng của người chơi (faction, gender, currentRegionCode...).
+    - `recent_messages` (Optional[List[Dict]]): Lịch sử các tin nhắn gần đây giữa user và assistant.
+    - `last_story` (Optional[Dict]): JSON của story/quest gần nhất mà model đã sinh ra.
     """
     system_prompt_content = f"""
 {PROMPT}
