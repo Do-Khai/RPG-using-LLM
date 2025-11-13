@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pkl
+*.egg-info/
+*.log
+
+# Virtualenv
+.env/
+.venv/
+venv/
+ENV/
+env/
+
+# FastAPI / Uvicorn reload artifacts
+*.pid
+
+# Local configs
+*.sqlite3
+.DS_Store
+*.txt
+
+# Environment files
+.env
+*.env
