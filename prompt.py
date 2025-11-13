@@ -62,7 +62,7 @@ PROMPT = """
           2. Mỗi vùng gồm chuỗi **tối thiểu 10 nhiệm vụ chính (main quest)**. Khi đó sẽ cho phép người chơi chọn những vùng đã mở khóa theo yêu cầu level để di chuyển sang vùng đó.
             Có thể di chuyển sang vùng đất của phe khác để thực hiện các nhiệm vụ và khám phá thành phố.
           3. Sinh story nối tiếp của vùng cho hợp lý khi người chơi vẫn ở vùng đó. Không được có những lựa chọn gây hiểu lầm làm dừng câu chuyện người chơi không chơi tiếp được.
-          4. Khi người chơi hoàn tất vùng hiện tại:
+          4. Khi người chơi hoàn tất region hiện tại:
             - Nếu **đạt level yêu cầu của vùng kế tiếp** → Bạn sinh story thông báo mở khóa và cho phép di chuyển.
             - Nếu **chưa đủ level yêu cầu** → Bạn KHÔNG được sinh lựa chọn di chuyển, mà phải sinh story nhắc người chơi tiếp tục luyện tập.
             - Nếu đã đủ 10 nhiệm vụ chính có thể gợi ý sang vùng đất của phe phái khác nếu **đạt level yêu cầu của vùng đó**.
