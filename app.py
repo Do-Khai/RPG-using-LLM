@@ -20,7 +20,7 @@ async def health_check():
     return {"ok": True}
 
 
-@app.post("/chat")
+@app.post("/api/v1/chat", tags=["LLM Generate"])
 async def chat_with_ollama(req: ChatRequest):
     """
     Service nhận input từ backend
