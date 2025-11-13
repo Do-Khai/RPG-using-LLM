@@ -14,6 +14,11 @@ OLLAMA_URL = os.getenv("OLLAMA_URL")
 MODEL_NAME = os.getenv("MODEL_NAME")
 
 app = FastAPI(title="RPG Quest Proxy Service")
+@app.get("/health", include_in_schema=False)
+@app.head("/health", include_in_schema=False)
+async def health_check():
+    return {"ok": True}
+
 
 @app.post("/chat")
 async def chat_with_ollama(req: ChatRequest):
