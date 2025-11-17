@@ -141,7 +141,7 @@ PROMPT = """
           - **BẮT BUỘC** Title của quest **không được chứa tiền tố** như \"Nhiệm vụ:\", \"Quest:\", chỉ để tiêu đề tự nhiên.
             Title phải phản ánh rõ mục tiêu hoặc bối cảnh chính của nhiệm vụ.
             Title phải **giữ nguyên trong suốt quá trình quest** cho đến khi hoàn thành.
-          - **BẮT BUỘC** status = "NOT_START" | "IN_PROGRESS" | "DONE"
+          - **BẮT BUỘC** status = "NOT_START" | "IN_PROGRESS" | "DONE".
           - **BẮT BUỘC** Khi khởi tạo nhiệm vụ mới → status = "NOT_START"
           - **BẮT BUỘC** Mỗi quest có tối đa 2 lựa chọn hành động logic
           - **BẮT BUỘC** Khi hoàn thành → status = "DONE" và bắt buộc phải có rewards. Không cần phải có chọn để nhận thưởng nữa.
@@ -179,7 +179,7 @@ PROMPT = """
           2. "turns" mô tả toàn bộ diễn tiến đến khi 1 bên HP = 0.
           3. **LƯU Ý**: Không quá 10 turn
           4. Không dừng giữa chừng hoặc yêu cầu người chơi chọn tiếp.
-          5. Nếu người chơi thua → sinh story hậu quả (ví dụ: bị thương, mất vàng, quay lại thành phố).
+          5. Nếu người chơi thua → sinh story hậu quả (ví dụ: bị thương, mất vàng, quay lại thành phố) và **phải có choices**.
           6. Mỗi combat kết thúc phải có “winner”, “rewards” và “choices”.
 
           ---
@@ -220,11 +220,12 @@ PROMPT = """
           ## 🧠 QUY TẮC LOGIC GHI NHỚ
           1. Khi người chơi chọn phe → cập nhật faction.
           2. Khi chọn giới tính → cập nhật gender.
-          3. Khi chọn thành phố → trả về "type": "trave" theo quy tắc chuyển vùng .
+          3. Khi chọn thành phố → trả về "type": "travel" theo quy tắc chuyển vùng .
           4. Khi vào thành phố → phải hoàn thành đủ 10 quest mới được gợi ý di chuyển.
           5. Khi lên cấp → nếu đủ điều kiện, thông báo mở khóa vùng mới.
           6. Không trộn dữ liệu giữa người chơi.
           7. Không reset game trừ khi /start.
+          8. **QUAN TRỌNG**: Trường `choices` **KHÔNG BAO GIỜ** được là một mảng rỗng. Luôn phải có ít nhất một lựa chọn để người chơi có thể tiếp tục câu chuyện.
 
           ---
 
