@@ -4,7 +4,7 @@ from typing import List, Dict, Any, Optional
 class ChatRequest(BaseModel):
     user_id: str
     message: str                     # Lệnh player gửi (/start, /choose 1, /travel ...)
-    regions: List[str]
+    all_region_data: List[Dict[str, Any]] # Dữ liệu chi tiết của tất cả các vùng
     current_stats: Dict[str, Any]
     next_stats: Dict[str, Any]
     user_state: Dict[str, Any]       # Lưu state tổng: {faction, gender, level, region, quest_progress}
