@@ -25,19 +25,14 @@ async def chat_with_ollama(req: ChatRequest):
     """
     Service nhận input từ backend, gọi đến LLM để sinh nội dung game và trả về JSON hợp lệ.
 
-    **Mô tả:**
-    - Endpoint này là cầu nối giữa backend game và model ngôn ngữ (LLM).
-    - Nó nhận vào trạng thái hiện tại của người chơi, tin nhắn/lệnh cuối cùng, và lịch sử chat.
-    - Dựa trên các thông tin đó, nó xây dựng một prompt hoàn chỉnh, gửi đến LLM, và nhận lại một JSON chứa diễn biến tiếp theo của game (story, quest, battle).
-
     **Request Body:**
 
     - `user_id` (str, **bắt buộc**): ID định danh duy nhất của người chơi.
     - `message` (str, **bắt buộc**): Lệnh hoặc tin nhắn người chơi vừa gửi (ví dụ: "/start", "/choose 1").
-    - `regions` (List[str], **bắt buộc**): Danh sách tất cả các mã vùng đất có trong game.
+    - `all_region_data` (List[Dict], **bắt buộc**): Danh sách các đối tượng JSON chứa dữ liệu chi tiết của tất cả các vùng.
     - `current_stats` (Dict, **bắt buộc**): Dictionary chứa các chỉ số hiện tại của người chơi (level, hp, atk...).
     - `next_stats` (Dict, **bắt buộc**): Dictionary chứa các chỉ số của người chơi ở level tiếp theo.
-    - `user_state` (Dict, **bắt buộc**): Dictionary chứa state tổng của người chơi (faction, gender, currentRegionCode...).
+    - `user_state` (Dict, **bắt buộc**): Dictionary chứa state tổng của người chơi (faction, gender,...).
     - `recent_messages` (Optional[List[Dict]]): Lịch sử các tin nhắn gần đây giữa user và assistant.
     - `last_story` (Optional[Dict]): JSON của story/quest gần nhất mà model đã sinh ra.
     """
@@ -47,7 +42,7 @@ async def chat_with_ollama(req: ChatRequest):
 ---
 ## ⚙️ BỐI CẢNH NGƯỜI CHƠI HIỆN TẠI
 - **UserID**: {req.user_id} (Lưu ý: Không trộn lẫn dữ liệu với người chơi khác)
-- **Các vùng đất trong game**: {json.dumps(req.regions, ensure_ascii=False)}
+- **Các vùng đất và các thông tin chi tiết của các vùng đất đó trong game**: {json.dumps(req.all_region_data, ensure_ascii=False)}
 - **Chỉ số hiện tại**: {json.dumps(req.current_stats, ensure_ascii=False)}
 - **Chỉ số khi lên cấp**: {json.dumps(req.next_stats, ensure_ascii=False)}
 - **State hiện tại của người chơi**: {json.dumps(req.user_state, ensure_ascii=False)}
@@ -90,7 +85,13 @@ async def chat_with_ollama(req: ChatRequest):
         raise HTTPException(status_code=500, detail="Ollama trả về response rỗng. Kiểm tra lại model được load và chạy đúng chưa.")
 
     try:
-        parsed = json.loads(response_content)
+        cleaned_content = response_content.strip()
+        if cleaned_content.startswith("```json"):
+            start_index = cleaned_content.find('{')
+            end_index = cleaned_content.rfind('}')
+            if start_index != -1 and end_index != -1:
+                cleaned_content = cleaned_content[start_index:end_index+1]
+        parsed = json.loads(cleaned_content)
     except Exception:
         raise HTTPException(status_code=500, detail=f"Phản hồi từ model không phải JSON hợp lệ: {response_content}")
 
