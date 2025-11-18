@@ -6,6 +6,7 @@ __pycache__/
 *.pkl
 *.egg-info/
 *.log
+*.docx
 
 # Virtualenv
 .env/
