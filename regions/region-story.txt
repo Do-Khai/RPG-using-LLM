@@ -1,0 +1,501 @@
+==============================================================================================================================================================================
+I. LIGHT FACTION – 8 vùng
+
+Chủ đề: Ánh sáng – trật tự – bảo hộ – phong ấn Ma Thần Eclipse.
+- Valoria phát hiện dấu hiệu Phong Ấn Ánh Sáng bị suy yếu. Các hiệp sĩ điều tra nguyên nhân và phát hiện phe Dark đang tìm cách đánh cắp Tinh Thạch Khởi Nguyên. 
+	Người chơi bắt đầu hành trình bằng việc điều tra các đợt quái xâm nhập, cứu dân khỏi bóng ma lạc lối và khám phá thư viện cổ, biết về tiên tri Ma Thần Eclipse sẽ trở lại. 
+- Tại Thung lũng Celestra, rừng linh hồn nổi loạn, các linh mục nghi ngờ ai đó đang gọi hồn trái phép để phá vỡ giao ước với Ánh Sáng. Người chơi vào khu linh rừng sâu, giải cứu linh mục bị mất kiểm soát 
+	và tìm kẻ chủ mưu điều khiển vong hồn – một tướng Dark, khôi phục giao ước giữa Celestra và rừng linh hồn.
+- Đồi Solaris chịu nhiều thiên tai bất thường do Dark sử dụng Cột Năng Lượng Đen che mặt trời. Người chơi tìm và phá hủy cột năng lượng, chiến đấu với lính đánh thuê Dark và khám phá hầm ngầm chứa vũ khí 
+	bóng tối, giải thoát Solaris khỏi màn sương tối nhân tạo. 
+- Tại Cung điện Elysium, Cổng trời xuất hiện vết nứt khi một pháp sư Ánh Sáng sa ngã cố mở nó để hấp thụ năng lượng thiên giới. Người chơi điều tra thư viện thiên văn, chiến đấu tại Cung Điện Trắng 
+	và ngăn pháp sư mở cổng, niêm phong vết nứt và ổn định ma năng Ánh Sáng.
+- Luminar rung chuyển vì mâu thuẫn nội bộ và vụ ám sát chính trị bị đổ lỗi cho Dark. Người chơi điều tra, phát hiện kẻ gây ra là phe trung lập cực đoan và ngăn chiến tranh bùng nổ, bảo vệ thủ phủ. 
+- Tại đền Haloria, vũ khí Hoa Thánh Halor phát sáng, báo hiệu Dark muốn đánh thức năng lượng của nó. Người chơi bảo vệ nghi lễ thanh tẩy, khám phá Hoa Thánh là phần phong ấn Ma Thần Eclipse.
+- Trên đỉnh Rayden, Titan Sét tỉnh giấc do phong ấn yếu đi, gây bão điện. Người chơi leo núi, chiến đấu với sinh vật lôi điện hoang dại, quyết định phong ấn Titan hoặc biến Titan thành đồng minh Light. 
+- Tại Thánh địa Solareon, sự thật hé lộ: Ánh Sáng từng phản bội Ma Thần Eclipse. Người chơi đối mặt câu hỏi liệu Ánh Sáng có thật sự thuần khiết, quyết định con đường Ánh Sáng trước đại chiến.
+
+1. VALORIA – Thành Valoria
+
+Trọng tâm: Khởi đầu – lời tiên tri ánh sáng – sự trỗi dậy của Bóng Tối
+Main story:
+Valoria phát hiện ra dấu hiệu Phong Ấn Ánh Sáng bị suy yếu. Các hiệp sĩ điều tra nguyên nhân và phát hiện phe Dark đang tìm cách đánh cắp Tinh Thạch Khởi Nguyên, nguồn bảo hộ của Valoria.
+NPC:
+	Kaelen: Hiệp sĩ trưởng Valoria, giao nhiệm vụ chính và hướng dẫn ban đầu.
+	Liora: Linh mục trưởng Valoria, cung cấp thông tin tiên tri về ánh sáng và bóng tối.
+	Darius: Huấn luyện kỹ năng chiến đấu cơ bản. Có thể đưa nhiệm vụ phụ bảo vệ dân làng.
+	Elowen: Người tìm kiếm thông tin về quái vật lạc lối. Hướng dẫn cách sử dụng thẻ nhiệm vụ.
+	Fenric: Cung cấp nhiệm vụ phụ thu thập vật phẩm trong thành.
+Người chơi tại Valoria bắt đầu hành trình bằng việc:
+điều tra các đợt quái xâm nhập
+cứu dân khỏi “bóng ma lạc lối”
+khám phá thư viện cổ Valoria, biết về tiên tri Ma Thần Eclipse sẽ trở lại
+→ Mục tiêu: Bảo vệ Tinh Thạch Khởi Nguyên khỏi tay Dark.
+
+2. CELESTRA – Thung lũng Celestra
+Trọng tâm: Linh hồn – ma thuật ánh sáng – rừng linh thiêng
+Main story:
+Rừng linh hồn bắt đầu nổi loạn. Các linh mục nghi ngờ rằng ai đó đang gọi hồn trái phép để phá vỡ giao ước giữa rừng và Ánh Sáng.
+NPC:
+	Amariel: Linh mục trưởng Celestra, dẫn người chơi vào rừng linh hồn. Giải thích về giao ước ánh sáng-rừng.
+	Serenya: Hướng dẫn sử dụng phép ánh sáng. Giao nhiệm vụ phụ tìm linh hồn bị lạc.
+	Tavric: Người canh rừng, cung cấp nhiệm vụ tuần tra.
+	Vaelith: Người thu thập thông tin về hoạt động tướng Dark.
+	Myrren: Hướng dẫn chế tạo bùa trấn yểm rừng.
+Người chơi:
+vào khu linh rừng sâu
+giải cứu linh mục bị mất kiểm soát
+tìm kẻ chủ mưu điều khiển vong hồn (một tướng Dark)
+→ Mục tiêu: Khôi phục giao ước giữa Celestra và rừng linh hồn.
+
+3. SOLARIS – Đồi Solaris
+Trọng tâm: Sức mạnh – lò luyện chiến binh – thử thách ý chí
+Main story:
+Solaris chịu nhiều đợt thiên tai bất thường. Một nguồn năng lượng lạ đang phá rối ánh mặt trời.
+Phe Light phát hiện Dark đang sử dụng Cột Năng Lượng Đen để che lấp mặt trời tại vùng này nhằm phá huấn luyện.
+NPC:
+	Calyon: Huấn luyện viên pháp thuật ánh sáng, hỗ trợ chiến đấu và hướng dẫn skill mới.
+	Bravos: Chỉ dẫn phá hủy các cột năng lượng đen.
+	Selindra: Theo dõi thời tiết bất thường. Giao nhiệm vụ phụ cứu dân Solaris.
+	Orin: Hướng dẫn luyện tập chiến binh.
+	Vynessa: Người cung cấp thông tin về quân Dark. Giao nhiệm vụ trinh sát hầm ngầm.
+Người chơi:
+tìm và phá hủy các cột năng lượng
+chiến đấu chống lính đánh thuê Dark
+khám phá hầm ngầm chứa vũ khí bóng tối
+→ Mục tiêu: Giải thoát Solaris khỏi màn sương tối nhân tạo.
+
+4. ELYSIUM – Cung điện Elysium
+Trọng tâm: Pháp sư cấp cao – cổng trời – ngăn chặn hỗn loạn
+Main story:
+Cổng trời xuất hiện dấu hiệu nứt. Một pháp sư Ánh Sáng sa ngã đang cố mở nó để hấp thụ năng lượng thiên giới, hòng vượt mặt các bậc đại pháp sư.
+NPC:
+	Thalorian: Giữ bí ẩn về Cổng Trời. Giao nhiệm vụ chính niêm phong cổng.
+	Isaleth: Hướng dẫn người chơi khám phá thư viện thiên văn.
+	Corvyn: Theo dõi pháp sư sa ngã. Giao nhiệm vụ phụ ngăn phá cổng.
+	Javaris: Huấn luyện chiến thuật pháp thuật. Hướng dẫn người chơi kỹ năng phòng thủ.
+	Selindra: Người cung cấp thông tin về năng lượng thiên giới.
+Người chơi:
+điều tra lời nguyền trong thư viện thiên văn
+chiến đấu tại Cung Điện Trắng
+ngăn pháp sư sa ngã mở cổng
+→ Mục tiêu: Niêm phong vết nứt thiên giới, ổn định ma năng của Ánh Sáng.
+
+5. LUMINAR – Thành Luminar
+Trọng tâm: Thủ phủ – mang tính chính trị – trung tâm văn minh Ánh Sáng
+Main story:
+Luminar rung chuyển vì mâu thuẫn nội bộ: một phe trong hội đồng muốn tấn công Dark trước, phe khác muốn hòa đàm.
+Trong lúc đó, một vụ ám sát chính trị xảy ra, đổ lỗi cho Dark.
+NPC:
+	Alarice: Người chơi có thể trao đổi thông tin. Hướng dẫn nhiệm vụ chính-trung gian.
+	Drevion: Giao nhiệm vụ phụ điều tra vụ ám sát.
+	Velric: Cung cấp thông tin chính trị. Hướng dẫn tránh xung đột nội bộ.
+	Mariveth: Theo dõi hoạt động phe thứ ba cực đoan.
+	Tavora: Người chơi có thể nhận nhiệm vụ bảo vệ Luminar khỏi chiến tranh.
+Người chơi:
+điều tra vụ ám sát
+phát hiện kẻ thật sự gây chuyện là phe thứ ba trung lập cực đoan
+ngăn chiến tranh bùng nổ sớm
+→ Mục tiêu: Bảo vệ Luminar khỏi nội chiến chính trị do kẻ ẩn danh giật dây.
+
+6. HALORIA – Đền Haloria
+Trọng tâm: Thánh tích – nghi lễ – thần điện cổ
+Main story:
+Vũ khí “Hoa Thánh Halor” bắt đầu phát sáng, báo hiệu có kẻ muốn đánh thức năng lượng của nó.
+Dark bí mật cử pháp sư đến chiếm đền.
+NPC:
+	Selvanna: Gợi ý về phong ấn Ma Thần Eclipse. Hướng dẫn nghi lễ thanh tẩy.
+	Kaivor: Người canh giữ thánh tích. Giao nhiệm vụ phụ bảo vệ đền.
+	Nyssara: Theo dõi pháp sư Dark xâm nhập.
+	Orveth: Hướng dẫn người chơi sử dụng Hoa Thánh Halor.
+	Ilvara: Cung cấp thông tin về năng lượng cổ.
+Người chơi:
+vào khu đền thiêng
+bảo vệ nghi lễ thanh tẩy
+khám phá bí mật rằng Hoa Thánh là một phần phong ấn Ma Thần Eclipse
+→ Mục tiêu: Giữ thánh tích Haloria an toàn.
+
+7. RAYDEN – Đỉnh Rayden
+Trọng tâm: Thần mặt trời – bão tố – titan thức tỉnh
+Main story:
+Titan Sét Rayden tỉnh giấc do phong ấn yếu đi. Titan bất ổn gây ra bão điện quét khắp vùng.
+NPC:
+	Thoryn: Người giữ Titan Rayden. Hướng dẫn quyết định phong ấn Titan.
+	Veylor: Theo dõi bão tố và Titan lôi.
+	Elthira: Giao nhiệm vụ phụ trấn áp sinh vật lôi điện.
+	Calyth: Hướng dẫn leo đỉnh Rayden.
+	Myrrion: Người cung cấp thông tin về sự thức tỉnh Titan.
+Người chơi:
+leo lên đỉnh núi
+chiến đấu với sinh vật lôi điện hoang dại
+quyết định: phong ấn Titan hoặc khiến Titan trở thành đồng minh Light
+→ Mục tiêu: Ổn định Titan Lôi Rayden.
+
+8. SOLAREON – Thánh địa Solareon
+Trọng tâm: Điểm quy tụ Ánh Sáng – chuẩn bị đại chiến
+Main story:
+Solareon hé lộ sự thật: Ánh Sáng từng phản bội Ma Thần Eclipse trong thời cổ đại, khiến eclipse bị phong ấn.
+NPC:
+	Kaelisar: Cung cấp nhiệm vụ tìm hiểu lịch sử Ánh Sáng.
+	Vaeloria: Người giải thích bí mật Ma Thần Eclipse.
+	Faylith: Giao nhiệm vụ phụ thu thập cổ vật ánh sáng.
+	Orvian: Hướng dẫn người chơi tìm manh mối đại chiến.
+	Deylric: Người giám sát sự xuất hiện của phe Dark.
+Người chơi sẽ phải đối mặt với câu hỏi:
+Liệu Ánh Sáng có thật sự “thuần khiết” như họ nghĩ?
+→ Mục tiêu: Quyết định con đường Ánh Sáng sẽ đi khi đại chiến đến.
+
+==============================================================================================================================================================================
+
+🌑 II. DARK FACTION – 8 vùng
+
+Chủ đề: Sức mạnh – bóng tối – quyền lực – phục sinh Ma Thần Eclipse.
+- Ở Noctara, bóng tối dày lên, các tướng Dark chia phe: phục sinh Eclipse hoặc chiếm quyền thế giới. Người chơi chọn hướng. 
+- Tại Draven, thí nghiệm Dark mất kiểm soát khiến quái vật đột biến lan tràn, người chơi kiểm soát hoặc tiêu hủy nguồn đột biến. 
+- Đầm lầy Vorlis xuất hiện khí độc hắc ám thoát kiểm soát, giết cả binh lính Dark; người chơi chế ngự khí độc hoặc biến thành vũ khí. 
+- Rừng Nemora, linh hồn cổ bị Dark dùng làm năng lượng phục sinh Eclipse, người chơi giải thoát hoặc kiểm soát linh hồn.
+- Obsyra chứng kiến nội bộ Dark chia thành ba phe: phục sinh Eclipse, lật đổ thần linh, ký hòa ước với Neutral. Người chơi chọn phe, định hình tương lai Dark. 
+- Tại Duskreach, thánh tích Neutral bị đánh cắp, mở Cánh Cổng Hoàng Hôn, chứa ký ức Ma Thần; người chơi theo dấu và chọn phe nhận thánh tích. 
+- Trên đỉnh Tenebris, bức tường cổ miêu tả sự thật: Ma Thần Eclipse từng là thần hòa bình, bị phản bội bởi Ánh Sáng. Người chơi tìm Mảnh Ký Ức Eclipse quan trọng. 
+- Hang Umbra, trung tâm nghi thức Dark, là cội nguồn Eclipse; người chơi quyết định vận mệnh Ma Thần.
+
+9. NOCTARA – Pháo đài Noctara
+Trọng tâm: Khởi đầu chiến binh Dark – âm mưu – bóng đêm vĩnh cửu
+Main story:
+Bóng tối tại Noctara dày lên bất thường, dấu hiệu phong ấn Eclipse sắp tan.
+Các tướng Dark bắt đầu chia rẽ mục tiêu:
+phe muốn phục sinh Eclipse
+phe muốn chiếm quyền kiểm soát thế giới không cần thần
+NPC:
+	Draxion: Tướng Dark Noctara. Chia phe, giao nhiệm vụ lựa chọn hướng phục sinh hoặc thống trị.
+	Velyth: Hỗ trợ chiến đấu. Hướng dẫn người chơi chọn phe.
+	Sylthra: Người trinh sát pháo đài. Giao nhiệm vụ phụ thu thập thông tin phe đối lập.
+	Korvath: Huấn luyện tấn công ban đêm. Hướng dẫn kỹ năng Shadow Strike.
+	Nythera: Người cung cấp vật phẩm tối. Giao nhiệm vụ phụ thâm nhập bí mật.
+Người chơi chọn 1 trong 2 hướng.
+
+10. DRAVEN – Tàn tích Draven
+Trọng tâm: Nguyền rủa – thí nghiệm – bóng tối bị thất thoát
+Main story:
+Một nhà khoa học Dark mất kiểm soát thí nghiệm, khiến quái vật đột biến lan tràn.
+Dark muốn thu gom năng lượng hỗn loạn này để đẩy nhanh nghi thức phục sinh.
+NPC:
+	Malrik: Nhà khoa học Draven. Giao nhiệm vụ thí nghiệm và kiểm soát quái vật đột biến.
+	Zyron: Pháp sư Draven. Cung cấp nhiệm vụ chiến thuật.
+	Thyven: Người giám sát phòng thí nghiệm. Giao nhiệm vụ phụ thu thập mẫu năng lượng hỗn loạn.
+	Vythera: Hỗ trợ nghiên cứu pháp thuật đen. Hướng dẫn kỹ năng kiểm soát quái vật.
+	Kyrven: Người bảo vệ cổng thí nghiệm. Giao nhiệm vụ phụ ngăn quái vật trốn thoát.
+→ Mục tiêu: Kiểm soát hoặc tiêu hủy nguồn đột biến hỗn loạn.
+
+11. VORLIS – Đầm lầy Vorlis
+Trọng tâm: Khí độc – nguyền rủa – ma vật
+Main story:
+Dark tạo ra khí độc hắc ám nhưng nó thoát ra khỏi kiểm soát, giết cả binh lính của họ.
+NPC:
+	Dralnor: Thợ tạo Vorlis. Chế ngự khí độc, NPC phụ chiến thuật.
+	Sylveth: Người trinh sát đầm lầy. Giao nhiệm vụ phụ thu thập mẫu khí độc.
+	Veylor: Huấn luyện chiến binh vùng đầm lầy. Hướng dẫn kỹ năng sinh tồn.
+	Noryth: Người nghiên cứu ma vật đầm lầy. Giao nhiệm vụ phụ chế tạo vũ khí khí độc.
+	Thylar: Cán bộ hậu cần Vorlis. Hỗ trợ thu thập vật phẩm sự kiện.
+→ Mục tiêu: Chế ngự khí độc hoặc biến nó thành vũ khí chiến tranh.
+
+12. NEMORA – Rừng Nemora
+Trọng tâm: Sinh vật đêm – rừng mục ruỗng – lời nguyền cổ
+Main story:
+Rừng này từng thuộc về Neutral nhưng bị Dark chiếm.
+Giờ nó đang “tự sống dậy”, tấn công mọi sinh vật.
+Nguyên nhân:
+Một linh hồn cổ đang được Dark dùng làm nguồn năng lượng phục sinh Eclipse.
+NPC:
+	Elvryn: Linh mục rừng Nemora. Nhiệm vụ giải thoát linh hồn cổ.
+	Mythar: Người giám sát sinh vật đêm. Giao nhiệm vụ phụ kiểm soát linh hồn.
+	Kalyth: Chiến binh rừng. Hướng dẫn kỹ năng ẩn nấp và tấn công bất ngờ.
+	Voryn: Người thu thập nguyên liệu linh hồn. Giao nhiệm vụ phụ chế tạo bùa bảo vệ.
+	Zeryth: Người cung cấp thông tin về Dark. Hướng dẫn cách đối phó ma vật bị Dark thao túng.
+→ Mục tiêu: Giải thoát hoặc kiểm soát linh hồn cổ.
+
+13. OBSYRA – Thành Obsyra
+Trọng tâm: Thủ đô Dark – chính trị đen – âm mưu phản loạn
+Main story:
+Nội bộ Dark chia làm 3 phe lớn:
+Phục sinh Eclipse để hủy diệt Ánh Sáng
+Lật đổ mọi thần linh để tự nắm quyền tuyệt đối
+Ký hòa ước để tìm sức mạnh mới từ Neutral
+NPC:
+	Malveth: Bá tước Obsyra. Nhiệm vụ chính trị, NPC trung gian phe Dark.
+	Deyron: Người quản lý hội đồng Dark. Giao nhiệm vụ phụ đàm phán phe phái.
+	Valthor: Chiến binh phe cực đoan. Hướng dẫn kỹ năng chiến đấu chính trị.
+	Norythar: Người giám sát nội bộ Dark. Giao nhiệm vụ phụ theo dõi mưu đồ phe khác.
+	Zalith: Người cung cấp thông tin bí mật. Hướng dẫn người chơi chọn phe chiến lược.
+Người chơi lựa 1 trong 3 phe, định hình tương lai Dark.
+
+14. DUSKREACH – Hẻm vực Duskreach
+Trọng tâm: Buôn lậu – vùng xám – lính đánh thuê
+Main story:
+Một thánh tích Neutral bị đánh cắp và đang được rao bán trong thế giới ngầm.
+Thánh tích này có thể mở Cánh Cổng Hoàng Hôn, nơi chứa ký ức về Ma Thần.
+NPC:
+	Korveth: Kẻ buôn bán bí ẩn Duskreach. Trao đổi thánh tích, nhiệm vụ phụ.
+	Thyrel: Lính đánh thuê. Giao nhiệm vụ phụ trấn áp băng cướp.
+	Sylvarn: Người giao dịch thông tin bí mật. Hướng dẫn cách theo dấu thánh tích.
+	Drovath: Người săn tìm báu vật. Giao nhiệm vụ phụ thu thập tài nguyên vùng xám.
+	Nytheris: Người thu thập thông tin về đối thủ. Hướng dẫn nhiệm vụ lựa chọn phe.
+→ Mục tiêu: Theo dấu thánh tích, chọn phe nhận nó.
+
+15. TENEBRIS – Đỉnh Tenebris
+Trọng tâm: Núi ác – tà khí cổ – chân tướng Eclipse
+Main story:
+Tại đỉnh Tenebris, người chơi tìm thấy một bức tường khắc cổ miêu tả sự thật:
+Ma Thần Eclipse từng là thần hòa bình, nhưng bị Ánh Sáng phản bội.
+NPC:
+	Umbryth: Linh hồn bí ẩn. Quyết định nghi thức chính, NPC cao trào.
+	Dralthar: Hướng dẫn tìm Mảnh Ký Ức Eclipse. Giao nhiệm vụ phụ thu thập manh mối cổ.
+	Vytheris: Người bảo vệ cổ vật. Hướng dẫn người chơi kỹ năng tìm dấu tích ma thuật.
+	Thalyor: Theo dõi di tích Eclipse. Giao nhiệm vụ phụ bảo vệ hiện trường.
+	Zoryn: Người trinh sát vùng núi. Hướng dẫn leo núi và tìm đường bí mật.
+→ Mục tiêu: Tìm “Mảnh Ký Ức Eclipse” – mảnh ghép quan trọng của toàn main story.
+
+16. UMBRA – Hang động Umbra
+Trọng tâm: Trung tâm nghi thức Dark – cội nguồn Eclipse
+Main story:
+Umbra là nơi chứa phong ấn chính của Eclipse.
+Phe Dark bắt đầu chuẩn bị nghi thức phá phong ấn, trong khi một phe Dark khác lại muốn dùng phong ấn này để giam luôn Ma Thần và đoạt quyền lực cho riêng mình.
+NPC:
+	Maldrith: Lãnh chúa Hang Umbra. Quyết định vận mệnh Eclipse.
+	Sylvryn: Người giám sát nghi thức. Hướng dẫn nhiệm vụ chính/phụ.
+	Koryth: Người bảo vệ phong ấn. Giao nhiệm vụ phụ kiểm tra an ninh.
+	Veythar: Người hỗ trợ nghi thức. Hướng dẫn người chơi thao tác pháp thuật.
+	Thylaris: Người cung cấp thông tin bí ẩn. Hướng dẫn cách ảnh hưởng đến vận mệnh Eclipse.
+→ Mục tiêu: Quyết định vận mệnh Eclipse.
+
+
+
+==============================================================================================================================================================================
+⚪ III. NEUTRAL FACTION – 8 vùng
+
+Chủ đề: Cân bằng – trung lập – tri thức cổ – can thiệp khi cần.
+- Cao nguyên Aurelia, Cỗ Máy Thiên Nhiên suy yếu do phong ấn Eclipse rạn nứt; người chơi khôi phục cân bằng trung lập hoặc để phe kiểm soát. 
+- Thành Ventora, cướp biển công nghệ tìm mảnh thiết bị điều khiển năng lượng Light và Dark, người chơi lấy lại hoặc hợp tác. 
+- Rừng Arcadia, hệ thống Máy Rừng trục trặc, người chơi tìm Hạch Arcadia, khôi phục hòa hợp thiên nhiên và máy móc. 
+- Thành phố Nexis, bản thiết kế Cỗ Máy Điều Khiển Phong Ấn Eclipse xuất hiện; Light và Dark muốn nó, người chơi quyết định tương lai công nghệ.
+- Học viện Lorien, Bài Ca Khởi Nguyên bị đánh cắp, người chơi lấy lại, khám phá liên quan phong ấn Eclipse. 
+- Thành Etherion, vết rạn không gian phản chiếu từ phong ấn, linh hồn cổ rơi xuống; người chơi ổn định bầu trời hoặc khai thác năng lượng. 
+- Sa mạc Zephyra, cổ máy dưới cát thức tỉnh, khôi phục cân bằng gió hoặc gây đổ vỡ khí hậu.
+- Đền Astralis, Tiên Tri Astral tiết lộ: Eclipse sẽ trở lại, thế giới phải chọn diệt thần, phục thần hoặc hòa giải. Người chơi hiểu toàn bộ lịch sử 3 phe và quyết định kết thúc thế giới.
+
+
+17. AURELIA – Cao nguyên Aurelia
+
+Trọng tâm: Cân bằng – trung tâm trung lập – nguồn năng lượng tự nhiên
+Main story:
+Cỗ Máy Thiên Nhiên – nguồn duy trì cân bằng 3 phe – đang suy yếu do phong ấn Eclipse rạn nứt.
+NPC:
+	Calvior: Người giữ cân bằng Aurelia. Hướng dẫn nhiệm vụ cân bằng phe.
+	Nyvara: Linh mục Aurelia. Cung cấp thông tin cổ.
+	Veylric: Người bảo vệ cỗ máy. Giao nhiệm vụ phụ khôi phục nguồn năng lượng.
+	Thalorin: Nhà khảo cổ. Hướng dẫn người chơi tìm dấu tích cổ xưa.
+	Zoryth: Người nghiên cứu thiên nhiên. Giao nhiệm vụ phụ quan sát cân bằng môi trường.
+→ Mục tiêu: Khôi phục cân bằng trung lập hoặc để phe nào đó kiểm soát.
+
+18. VENTORA – Thành Ventora
+Trọng tâm: Cơ giới – thương mại – thế lực ngầm trung lập
+Main story:
+Cướp biển công nghệ tìm thấy một mảnh thiết bị có thể điều khiển năng lượng Ánh Sáng lẫn Bóng Tối.
+NPC:
+	Myrris: Thương nhân Ventora. NPC trao đổi thiết bị năng lượng.
+	Daryth: Cướp biển công nghệ. Nhiệm vụ phụ lấy thiết bị.
+	Valthor: Người bảo vệ cảng. Hướng dẫn người chơi di chuyển an toàn trong hẻm ngầm.
+	Thyron: Người đàm phán. Giao nhiệm vụ phụ thương lượng với các phe.
+	Elvryn: Người thu thập thông tin. Hướng dẫn cách theo dấu thiết bị bị đánh cắp.
+→ Mục tiêu: Lấy lại thiết bị hoặc bắt tay với chúng.
+
+19. ARCADIA – Rừng Arcadia
+Trọng tâm: Thiên nhiên – máy móc – hòa hợp
+Main story:
+Hệ thống “Máy Rừng” bị trục trặc, khiến ảo ảnh bao trùm cả vùng.
+Người chơi phải tìm ra “Hạch Arcadia”.
+NPC:
+	Sylvara: Quản lý rừng Arcadia. Hướng dẫn tìm Hạch Arcadia.
+	Thalyra: Kỹ sư Arcadia. Hỗ trợ giải đố và khôi phục hệ thống Máy Rừng.
+	Voryth: Người trinh sát rừng. Giao nhiệm vụ phụ kiểm tra sinh vật rừng.
+	Zythera: Người bảo vệ linh hồn rừng. Hướng dẫn người chơi giải cứu linh hồn.
+	Koryn: Chiến binh rừng. Giao nhiệm vụ phụ ngăn sinh vật hỗn loạn.
+→ Mục tiêu: Khôi phục rừng Arcadia.
+
+20. NEXIS – Thành phố Nexis
+Trọng tâm: Năng lượng hỗn hợp – công nghệ cổ
+Main story:
+Nexis tìm thấy bản thiết kế Cỗ Máy Điều Khiển Phong Ấn Eclipse.
+Light và Dark đều muốn nó.
+NPC:
+	Malvar: Trung gian Nexis. NPC lựa chọn hướng phát triển công nghệ.
+	Lythera: Người giám sát nghiên cứu. Giao nhiệm vụ phụ thu thập dữ liệu công nghệ.
+	Daryth: Kỹ sư Nexis. Hướng dẫn người chơi vận hành cỗ máy.
+	Voryn: Người bảo vệ bản thiết kế. Giao nhiệm vụ phụ ngăn Light/Dark đánh cắp.
+	Thoryn: Người quản lý kho. Hướng dẫn người chơi thu thập linh kiện.
+→ Mục tiêu: Quyết định tương lai công nghệ này.
+
+21. LORIEN – Học viện Lorien
+Trọng tâm: Giả kim – tri thức – linh hồn
+Main story:
+“Bài Ca Khởi Nguyên” – nhạc pháp duy trì linh khí thế giới – bị đánh cắp.
+NPC:
+	Zalveth: Hiệu trưởng Lorien. Nhiệm vụ chính tìm lại Bài Ca Khởi Nguyên.
+	Elvris: Linh hồn du hành Lorien. Nhiệm vụ phụ và gợi ý.
+	Velythar: Giảng viên giả kim. Giao nhiệm vụ phụ nghiên cứu ma thuật cổ.
+	Thyrris: Người trông coi thư viện. Hướng dẫn tìm manh mối bài ca.
+	Nythera: Người thu thập cổ vật. Giao nhiệm vụ phụ khám phá bí ẩn phòng học.
+→ Mục tiêu: Lấy lại bài ca và khám phá nó liên quan đến phong ấn Eclipse.
+
+22. ETHERION – Thành Etherion
+Trọng tâm: Tri thức cổ – thành phố nổi – khảo cứu thiên giới
+Main story:
+Thành này nhìn thấy “vết rạn không gian” phản chiếu từ phong ấn Eclipse.
+Linh hồn cổ bắt đầu rơi xuống từ trời.
+NPC:
+	Dralyn: Tri thức gia Etherion. Ổn định bầu trời.
+	Sylvris: Bí ẩn trôi nổi Etherion. Nhiệm vụ phụ khảo cứu linh hồn cổ.
+	Korynth: Người giám sát vết rạn. Giao nhiệm vụ phụ thu thập dữ liệu không gian.
+	Zylar: Người bảo vệ thư viện. Hướng dẫn người chơi tìm kiếm sách cổ.
+	Vorythar: Người quan sát thiên văn. Giao nhiệm vụ phụ kiểm tra năng lượng rạn nứt.
+→ Mục tiêu: Ổn định bầu trời hoặc khai thác sức mạnh của linh hồn cổ.
+
+23. ZEPHYRA – Sa mạc Zephyra
+Trọng tâm: Gió – bão – công nghệ sa mạc
+Main story:
+Một cổ máy dưới cát đang thức tỉnh. Máy này có thể:
+khôi phục cân bằng gió
+hoặc gây đổ vỡ khí hậu toàn lục địa
+NPC:
+	Thalvyr: Thống lĩnh Zephyra. Kiểm soát cổ máy gió.
+	Myrron: Kỹ sư Zephyra. Hướng dẫn điều khiển cổ máy.
+	Sylthar: Người trinh sát sa mạc. Giao nhiệm vụ phụ theo dõi cổ máy.
+	Darythar: Người bảo vệ cồn cát. Hướng dẫn người chơi vượt qua bão cát.
+	Veythris: Người nghiên cứu cổ máy. Giao nhiệm vụ phụ kiểm tra năng lượng gió.
+→ Mục tiêu: Quyết định vận mệnh Zephyra.
+
+24. ASTRALIS – Đền Astralis
+Trọng tâm: Đền kết hợp Ánh Sáng – Bóng Tối – lời tiên tri kết cục
+Main story (cao trào nhất):
+Tại đây tồn tại Tiên Tri Astral:
+Eclipse sẽ trở lại, và thế giới phải chọn:
+Diệt thần – Phục thần – Hòa giải
+Người chơi hiểu ra toàn bộ lịch sử thật sự của 3 phe.
+NPC:
+	Calvryn: Tiên tri Astralis. Tiết lộ lịch sử 3 phe, nhiệm vụ cuối cùng.
+	Thalyros: Người bảo vệ đền. Hướng dẫn người chơi tìm tài liệu cổ.
+	Sylvaris: Người trông coi phòng tiên tri. Giao nhiệm vụ phụ giải câu đố lịch sử.
+	Zorythar: Người giám sát lễ nghi. Hướng dẫn thực hiện nghi thức cuối.
+	Elvrisar: Người thu thập thông tin từ các phe. Giao nhiệm vụ phụ lựa chọn kết cục.
+→ Mục tiêu: Xác định kết thúc của toàn bộ thế giới.
+
+
+Vùng		Phe			NPC													Sự kiện chính																		Lựa chọn / Hệ quả
+Valoria		Light		Kaelen, Liora, Darius, Elowen, Fenric				Phong Ấn Ánh Sáng suy yếu; quái vật xâm nhập; cứu dân; khám phá tiên tri Eclipse	Điều tra quái vật; tìm hiểu tiên tri
+Celestra	Light		Amariel, Serenya, Tavric, Vaelith, Myrren			Rừng linh hồn nổi loạn; giải cứu linh mục; khôi phục giao ước						Tìm tướng Dark điều khiển vong hồn; khôi phục giao ước
+Solaris		Light		Calyon, Bravos, Selindra, Orin, Vynessa				Phá hủy Cột Năng Lượng Đen; chiến đấu lính đánh thuê								Khám phá hầm ngầm Dark
+Elysium		Light		Thalorian, Isaleth, Corvyn, Javaris, Selindra		Cổng Trời xuất hiện vết nứt; ngăn pháp sư sa ngã									Niêm phong vết nứt thiên giới
+Luminar		Light		Alarice, Drevion, Velric, Mariveth, Tavora			Mâu thuẫn nội bộ, vụ ám sát															Ngăn chiến tranh bùng nổ; bảo vệ thủ phủ
+Haloria		Light		Selvanna, Kaivor, Nyssara, Orveth, Ilvara			Hoa Thánh Halor phát sáng; bảo vệ nghi lễ thanh tẩy									Khám phá Hoa Thánh là phần phong ấn Eclipse
+Rayden		Light		Thoryn, Veylor, Elthira, Calyth, Myrrion			Titan Sét tỉnh giấc																	Phong ấn Titan hoặc liên minh với Light
+Solareon	Light		Kaelisar, Vaeloria, Faylith, Orvian, Deylric		Hé lộ sự thật Ánh Sáng từng phản bội Eclipse										Quyết định con đường Ánh Sáng trước đại chiến
+Noctara		Dark		Draxion, Velyth, Sylthra, Korvath, Nythera			Bóng tối dày đặc; tướng Dark chia phe												Chọn phe Dark: phục sinh Eclipse hoặc chiếm quyền kiểm soát
+Draven		Dark		Malrik, Zyron, Thyven, Vythera, Kyrven				Thí nghiệm thất bại; quái vật đột biến lan tràn										Kiểm soát hoặc tiêu hủy nguồn đột biến
+Vorlis		Dark		Dralnor, Sylveth, Veylor, Noryth, Thylar			Khí độc hắc ám thoát kiểm soát														Chế ngự hoặc biến thành vũ khí
+Nemora		Dark		Elvryn, Mythar, Kalyth, Voryn, Zeryth				Linh hồn cổ bị Dark dùng làm năng lượng phục sinh Eclipse							Giải thoát hoặc kiểm soát linh hồn cổ
+Obsyra		Dark		Malveth, Deyron, Valthor, Norythar, Zalith			Nội bộ chia 3 phe: phục sinh Eclipse / lật đổ thần linh / ký hòa ước với Neutral	Chọn phe
+Duskreach	Dark		Korveth, Thyrel, Sylvarn, Drovath, Nytheris			Thánh tích Neutral bị đánh cắp; mở Cánh Cổng Hoàng Hôn								Theo dấu thánh tích; chọn phe nhận
+Tenebris	Dark		Umbryth, Dralthar, Vytheris, Thalyor, Zoryn			Bức tường cổ tiết lộ sự thật Ma Thần Eclipse từng là thần hòa bình					Tìm Mảnh Ký Ức Eclipse – mảnh ghép quan trọng
+Umbra		Dark		Maldrith, Sylvryn, Koryth, Veythar, Thylaris		Trung tâm nghi thức Dark; quyết định vận mệnh Eclipse								Chuẩn bị phá phong ấn
+Aurelia		Neutral		Calvior, Nyvara, Veylric, Thalorin, Zoryth			Cỗ Máy Thiên Nhiên suy yếu															Khôi phục cân bằng trung lập hoặc để phe kiểm soát
+Ventora		Neutral		Myrris, Daryth, Valthor, Thyron, Elvryn				Cướp biển công nghệ tìm mảnh thiết bị điều khiển năng lượng Light/Dark				Lấy lại thiết bị hoặc hợp tác với cướp biển
+Arcadia		Neutral		Sylvara, Thalyra, Voryth, Zythera, Koryn			Hệ thống Máy Rừng trục trặc; tìm Hạch Arcadia										Khôi phục hòa hợp thiên nhiên và máy móc
+Nexis		Neutral		Malvar, Lythera, Daryth, Voryn, Thoryn				Bản thiết kế Cỗ Máy Điều Khiển Phong Ấn Eclipse xuất hiện							Quyết định tương lai công nghệ
+Lorien		Neutral		Zalveth, Elvris, Velythar, Thyrris, Nythera			Bài Ca Khởi Nguyên bị đánh cắp														Lấy lại bài ca và khám phá liên quan phong ấn Eclipse
+Etherion	Neutral		Dralyn, Sylvris, Korynth, Zylar, Vorythar			Vết rạn không gian từ phong ấn; linh hồn cổ rơi xuống								Ổn định bầu trời hoặc khai thác năng lượng
+Zephyra		Neutral		Thalvyr, Myrron, Sylthar, Darythar, Veythris		Cổ máy gió thức tỉnh																Khôi phục cân bằng hoặc gây hỗn loạn khí hậu
+Astralis	Neutral		Calvryn, Thalyros, Sylvaris, Zorythar, Elvrisar		Tiên Tri Astral: Eclipse sẽ trở lại													Chọn kết thúc thế giới: diệt thần, phục thần, hòa giải
+
+
+Chi tiết
+- Báo hiệu sự suy yếu phong ấn
+  - Light: Valoria
+    - Hiện tượng: Phong Ấn Ánh Sáng suy yếu; quái vật xâm nhập; tiên tri Eclipse hé lộ
+    - NPC: Kaelen, Liora, Darius, Elowen, Fenric
+    - Nhiệm vụ: Điều tra quái vật; cứu dân; khám phá thư viện cổ
+  - Dark: Noctara
+    - Hiện tượng: Bóng tối dày đặc; tướng Dark chia phe
+    - NPC: Draxion, Velyth, Sylthra, Korvath, Nythera
+    - Nhiệm vụ: Chọn phe Dark: phục sinh Eclipse hoặc thống trị thế giới
+
+- Thao túng & xâm nhập
+  - Light:
+    - Celestra
+      - Hiện tượng: Rừng linh hồn nổi loạn
+      - NPC: Amariel, Serenya, Tavric, Vaelith, Myrren
+      - Nhiệm vụ phụ: Giải cứu linh mục; tìm tướng Dark điều khiển vong hồn
+    - Solaris – Cột năng lượng đen
+      - Hiện tượng: Cột năng lượng đen xuất hiện, gây thiên tai (bão, sét, địa chấn nhẹ)
+      - NPC: Calyon, Bravos, Selindra, Orin, Vynessa
+      - Nhiệm vụ phụ: Phá hủy hoặc ổn định cột năng lượng; chiến đấu với lính Dark; khám phá hầm ngầm
+  - Dark:
+    - Draven
+      - Hiện tượng: Thí nghiệm thất bại, quái vật đột biến lan tràn
+      - NPC: Malrik, Zyron, Thyven, Vythera, Kyrven
+      - Nhiệm vụ phụ: Kiểm soát hoặc tiêu hủy nguồn đột biến hỗn loạn
+    - Vorlis – Khí độc hắc ám
+      - Hiện tượng: Khí độc thoát kiểm soát, ảnh hưởng quân lính và sinh vật
+      - NPC: Dralnor, Sylveth, Veylor, Noryth, Thylar
+      - Nhiệm vụ phụ: Chế ngự khí độc bằng ma pháp hoặc công nghệ; biến khí độc thành vũ khí; giải cứu hoặc kiểm soát sinh vật bị nhiễm
+
+- Sự kiện thiên nhiên bất thường
+  - Titan Rayden (Light)
+    - Hiện tượng: Titan thức tỉnh, gây bão điện
+    - NPC: Thoryn, Veylor, Elthira, Calyth, Myrrion
+    - Nhiệm vụ: Phong ấn Titan hoặc biến Titan thành đồng minh Light
+  - Cổ máy Zephyra (Neutral)
+    - Hiện tượng: Cổ máy dưới sa mạc thức tỉnh
+    - NPC: Thalvyr, Myrron, Darythar, Veythris
+    - Nhiệm vụ: Khôi phục cân bằng gió hoặc gây hỗn loạn khí hậu
+
+- Sự kiện chính trị & nội bộ
+  - Light: Luminar
+    - Hiện tượng: Vụ ám sát, mâu thuẫn nội bộ
+    - NPC: Alarice, Drevion, Velric, Mariveth, Tavora
+    - Nhiệm vụ: Ngăn chiến tranh bùng nổ; bảo vệ thủ phủ
+  - Dark: Obsyra
+    - Hiện tượng: Chia phe 3 hướng (phục sinh Eclipse / lật đổ thần linh / ký hòa ước với Neutral)
+    - NPC: Malveth, Deyron, Valthor, Norythar, Zalith
+    - Nhiệm vụ: Chọn phe Dark, định hình tương lai
+  - Neutral: Aurelia & Ventora
+    - Aurelia NPC: Calvior, Nyvara, Veylric, Thalorin, Zoryth
+    - Ventora NPC: Myrris, Daryth, Valthor, Thyron, Elvryn
+    - Nhiệm vụ: Giữ cân bằng; chuẩn bị công nghệ hỗ trợ phe hợp tác
+
+- Công cụ / thánh tích quan trọng xuất hiện
+  - Hoa Thánh Halor (Light – Haloria)
+    - NPC: Selvanna, Kaivor, Nyssara, Orveth, Ilvara
+    - Nhiệm vụ: Bảo vệ nghi lễ thanh tẩy; khám phá bí mật phong ấn Eclipse
+  - Mảnh Ký Ức Eclipse (Dark – Tenebris)
+    - NPC: Umbryth, Dralthar, Vytheris, Thalyor, Zoryn
+    - Nhiệm vụ: Tìm mảnh ghép quan trọng của Eclipse
+  - Cỗ Máy Điều Khiển Phong Ấn Eclipse (Neutral – Nexis)
+    - NPC: Malvar, Lythera, Daryth, Voryn, Thoryn
+    - Nhiệm vụ: Quyết định tương lai công nghệ
+  - Bài Ca Khởi Nguyên (Neutral – Lorien)
+    - NPC: Zalveth, Elvris, Velythar, Thyrris, Nythera
+    - Nhiệm vụ: Lấy lại bài ca, khám phá liên quan phong ấn Eclipse
+
+- Chuẩn bị nghi thức / tập trung lực lượng
+  - Light: Solareon → bảo vệ thánh địa, phong ấn Titan, niêm phong Cổng Trời Elysium, củng cố quân Luminar
+  - Dark: Umbra → chuẩn bị nghi thức phục sinh Eclipse, chiếm Duskreach để lấy thánh tích
+  - Neutral:
+    - Aurelia, Nexis → giữ cân bằng
+    - Arcadia, Etherion, Zephyra → giám sát thiên nhiên & cổ máy
+    - Ventora → chuẩn bị công nghệ hỗ trợ phe hợp tác
+
+- Tiên tri cuối cùng / quyết định kết cục
+  - Vùng Astralis (Neutral)
+    - Tiên tri: Eclipse sẽ trở lại
+    - NPC: Calvryn, Thalyros, Sylvaris, Zorythar, Elvrisar
+    - Nhiệm vụ: Người chơi xác định kết thúc: Diệt thần / Phục thần / Hòa giải
