@@ -46,10 +46,10 @@ def get_by_code(code: str) -> Union[Dict[str, Any], None]:
 
 def expand_all_region_data(items: List[Union[str, Dict[str, Any]]]) -> List[Dict[str, Any]]:
     """
-    Accepts:
+    Cho phép user gửi:
      - list of codes: ["VALORIA", ...]
-     - list of {"code": "VALORIA"} or full dicts
-    Returns list of full region dicts (from cache or original objects).
+     - list of {"code": "VALORIA"} hoặc toàn bộ dictionary 
+    Trả về list toàn bộ region dicts (từ cache hoặc từ original objects).
     """
     out: List[Dict[str, Any]] = []
     if not items:
