@@ -42,7 +42,7 @@ async def chat_with_ollama(req: ChatRequest):
         region_details = expand_all_region_data(req.all_region_data or [])
         region_version = get_version()
     except Exception as e:
-        logging.warning(f"Error expanding region data: {e}")
+        logging.warning(f"Lỗi khi xử lý region data: {e}")
         region_details = req.all_region_data or []
         region_version = ""
     system_prompt_content = f"""
