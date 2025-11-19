@@ -2,7 +2,7 @@ from fastapi import FastAPI, HTTPException
 import json
 from prompt import PROMPT
 from schema import ChatRequest
-from region_cache import expand_all_region_data, get_version
+from regions.region_cache import expand_all_region_data, get_version
 from dotenv import load_dotenv
 import httpx
 import time 
