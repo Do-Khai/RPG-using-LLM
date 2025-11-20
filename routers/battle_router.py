@@ -13,7 +13,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 
 router = APIRouter()
 
-@router.post("/player-battle", tags=["LLM Generate for Combat between 2 players"])
+@router.post("/player-battle", tags=["LLM Generation"])
 async def generate_battle(req: BattleRequest):
     """
     Service nhận input từ backend, gọi đến LLM để sinh combat và trả về JSON hợp lệ.
@@ -60,7 +60,7 @@ async def generate_battle(req: BattleRequest):
 
     except httpx.HTTPStatusError as e:
         if e.response.status_code == 429:
-            logging.warning(f"Ollama API rate limit exceeded cho user {req.user_id}.")
+            logging.warning(f"Ollama API rate limit exceeded")
             raise HTTPException(status_code=429, detail="Quá nhiều yêu cầu đến dịch vụ LLM, vui lòng thử lại sau.")
         logging.error(f"Lỗi HTTP từ Ollama: {e.response.status_code} - {e.response.text}")
         raise HTTPException(status_code=500, detail=f"Lỗi HTTP từ Ollama: {e.response.status_code}")
