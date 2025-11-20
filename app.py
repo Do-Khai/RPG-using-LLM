@@ -1,8 +1,7 @@
 from fastapi import FastAPI, HTTPException
 import json
 from prompt import PROMPT
-from schema import ChatRequest
-from regions.region_cache import expand_all_region_data
+from models.schema import ChatRequest
 from dotenv import load_dotenv
 import httpx
 import time 
@@ -37,18 +36,12 @@ async def chat_with_ollama(req: ChatRequest):
     - `recent_messages` (Optional[List[Dict]]): Lịch sử các tin nhắn gần đây giữa user và assistant.
     - `last_story` (Optional[Dict]): JSON của story/quest gần nhất mà model đã sinh ra.
     """
-    # Client có thể gửi mỗi region code hoặc dict
-    try:
-        region_details = expand_all_region_data(req.all_region_data or [])
-    except Exception as e:
-        logging.warning(f"Lỗi khi xử lý region data: {e}")
-        region_details = req.all_region_data or []
     system_prompt_content = f"""
 {PROMPT}
 ---
 ## ⚙️ BỐI CẢNH NGƯỜI CHƠI HIỆN TẠI
 - **UserID**: {req.user_id} (Lưu ý: Không trộn lẫn dữ liệu với người chơi khác)
-- **Các vùng đất và các thông tin chi tiết của các vùng đất đó trong game**: {json.dumps(region_details, ensure_ascii=False)}
+- **Các vùng đất và các thông tin chi tiết của các vùng đất đó trong game**: {json.dumps(req.all_region_data, ensure_ascii=False)}
 - **Chỉ số hiện tại**: {json.dumps(req.current_stats, ensure_ascii=False)}
 - **Chỉ số khi lên cấp**: {json.dumps(req.next_stats, ensure_ascii=False)}
 - **State hiện tại của người chơi**: {json.dumps(req.user_state, ensure_ascii=False)}
