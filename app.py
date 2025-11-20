@@ -2,7 +2,7 @@ from fastapi import FastAPI, HTTPException
 import json
 from prompt import PROMPT
 from schema import ChatRequest
-from regions.region_cache import expand_all_region_data, get_version
+from regions.region_cache import expand_all_region_data
 from dotenv import load_dotenv
 import httpx
 import time 
@@ -40,14 +40,11 @@ async def chat_with_ollama(req: ChatRequest):
     # Client có thể gửi mỗi region code hoặc dict
     try:
         region_details = expand_all_region_data(req.all_region_data or [])
-        region_version = get_version()
     except Exception as e:
         logging.warning(f"Lỗi khi xử lý region data: {e}")
         region_details = req.all_region_data or []
-        region_version = ""
     system_prompt_content = f"""
 {PROMPT}
-region_version: {region_version}
 ---
 ## ⚙️ BỐI CẢNH NGƯỜI CHƠI HIỆN TẠI
 - **UserID**: {req.user_id} (Lưu ý: Không trộn lẫn dữ liệu với người chơi khác)

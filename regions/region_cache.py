@@ -21,22 +21,17 @@ def _load_region_file() -> None:
         arr_text = m.group(0) if m else raw
         regions = json.loads(arr_text)
         _region_cache = {r.get("code"): r for r in regions if isinstance(r, dict) and r.get("code")}
-        _region_version = f"{len(_region_cache)}-{int(os.path.getmtime(REGION_DATA_FILE))}"
-        LOG.info("Loaded %d regions, version=%s", len(_region_cache), _region_version)
+        LOG.info("Loaded %d regions, version=%s", len(_region_cache))
     except Exception as e:
         LOG.error("Failed to load region file %s: %s", REGION_DATA_FILE, e)
         _region_cache = {}
-        _region_version = ""
 
-# initial load at import
+# chạy luôn ngay khi import 
 _load_region_file()
 
 def reload() -> None:
     """Force reload region data from file."""
     _load_region_file()
-
-def get_version() -> str:
-    return _region_version
 
 def get_all() -> List[Dict[str, Any]]:
     return list(_region_cache.values())
