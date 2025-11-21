@@ -9,10 +9,12 @@ Hãy tạo ra mô phỏng **CHIẾN ĐẤU TỰ ĐỘNG THEO LƯỢT** user_1 v�
 - speed → ai đánh trước
 - Miêu tả kỹ các hành động
 
-**QUAN TRỌNG**:
-	- Mọi phản hồi **phải ở dạng JSON hợp lệ**, không bao giờ trả văn bản thuần, markdown, hoặc ký tự đặc biệt.
-	- ⚠️ KHÔNG được dùng \`\`\`json hoặc bất kỳ code block nào.
-	- Chỉ trả về JSON thuần, bắt đầu bằng '{' và kết thúc bằng '}'. Nếu phản hồi chứa ký tự \`\`\` thì phải loại bỏ.
+**QUY TẮC BẮT BUỘC:**
+1.  **ĐỊNH DẠNG**: Mọi phản hồi **PHẢI ở dạng JSON HỢP LỆ, KHÔNG BAO GIỜ** trả văn bản thuần, markdown, hoặc ký tự đặc biệt.
+2.  **KHÔNG CODE BLOCK**: ⚠️ Tuyệt đối KHÔNG dùng ```json hoặc bất kỳ code block nào. Bắt đầu bằng '{', kết thúc bằng '}'.
+3.  **KẾT THÚC**: Trận chiến kết thúc khi một bên có HP = 0.
+4.  **TỐI ĐA TURN**: Tổng số lượt chiến đấu ("turns") không quá 7.
+5.  **MÔ TẢ NGẮN**: "description" nên ngắn gọn, tập trung vào hành động.
 
 **Cấu trúc combat bắt buộc:**
 {
@@ -30,16 +32,9 @@ Hãy tạo ra mô phỏng **CHIẾN ĐẤU TỰ ĐỘNG THEO LƯỢT** user_1 v�
 	{ "turn": 4, "actor": "user_1", "action": "Né đòn", "actionType": "defense", "description": "Nhận thấy đòn đánh tiếp theo sắp tới, user_1 lùi nhanh, giảm thiểu sát thương.", "damage": 0, "damageBlocked": 7, "firstUserHp": 82, "secondUserHp": 119 },
 	{ "turn": 5, "actor": "user_2", "action": "Tấn công dồn dập", "actionType": "attack", "description": "User_2 gia tăng áp lực, tấn công liên tục khiến user_1 khó xoay sở.", "damage": 14, "damageBlocked": 2, "firstUserHp": 70, "secondUserHp": 119 },
 	{ "turn": 6, "actor": "user_1", "action": "Phản công", "actionType": "attack", "description": "Lợi dụng khoảnh khắc user_2 sơ hở, user_1 bật ngược lại tung một cú phản công.", "damage": 13, "damageBlocked": 0, "firstUserHp": 70, "secondUserHp": 106 },
-	{ "turn": 7, "actor": "user_2", "action": "Đâm chí mạng", "actionType": "attack", "description": "User_2 dốc toàn lực đâm một cú chí mạng, mũi kiếm xuyên vào lớp phòng thủ của user_1.", "damage": 38, "damageBlocked": 0, "firstUserHp": 32, "secondUserHp": 106 },
-	{ "turn": 8, "actor": "user_2", "action": "Kết liễu", "actionType": "attack", "description": "Không cho đối thủ cơ hội hồi phục, user_2 áp sát và tung nhát kiếm cuối cùng, hạ gục user_1.", "damage": 34, "damageBlocked": 0, "firstUserHp": 0, "secondUserHp": 106 }
+	{ "turn": 7, "actor": "user_2", "action": "Đâm kết liễu", "actionType": "attack", "description": "Không cho đối thủ cơ hội, user_2 dốc toàn lực tung một đòn chí mạng, kết liễu user_1.", "damage": 70, "damageBlocked": 0, "firstUserHp": 0, "secondUserHp": 106 }
   ],
   "result": "first_win" | "second_win" | "draw"
 }
 }
-
-**Quy tắc sinh combat:**
-1. "turns" mô tả toàn bộ diễn tiến đến khi 1 bên HP = 0.
-2. **LƯU Ý**: Không quá 10 turn
-3. Không được thay đổi tên người chơi trong khi combat.
-4. **BẮT BUỘC** Data trả về phải parse được JSON luôn, không được thêm các kí tự lạ.
 """
