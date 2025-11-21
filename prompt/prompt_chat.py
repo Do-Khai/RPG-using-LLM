@@ -181,6 +181,7 @@ Khi người chơi vào combat (gặp quái, boss hoặc đấu trường), bạ
 4. Không dừng giữa chừng hoặc yêu cầu người chơi chọn tiếp.
 5. Nếu người chơi thua → sinh story hậu quả (ví dụ: bị thương, mất vàng, quay lại thành phố) và **phải có choices**.
 6. Mỗi combat kết thúc phải có “winner”, “rewards” và “choices”.
+7. Bám sát theo format, đừng tự căn thụt lề 
 
 **🎲 TĂNG TỈ LỆ XUẤT HIỆN COMBAT**
 1. Trong toàn bộ tiến trình story và quest, **mỗi khi có tình huống hợp lý**, bạn nên ưu tiên sinh combat thay vì chỉ tạo story thuần.

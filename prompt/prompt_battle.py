@@ -15,6 +15,7 @@ Hãy tạo ra mô phỏng **CHIẾN ĐẤU TỰ ĐỘNG THEO LƯỢT** user_1 v�
 3.  **KẾT THÚC**: Trận chiến kết thúc khi một bên có HP = 0.
 4.  **TỐI ĐA TURN**: Tổng số lượt chiến đấu ("turns") **KHÔNG QUÁ 7**. (Ít hơn 7 vẫn được).
 5.  **MÔ TẢ NGẮN**: "description" nên ngắn gọn, tập trung vào hành động.
+6. Bám sát format ví dụ phía dưới, đừng tự căn thụt lề.
 
 **Cấu trúc combat bắt buộc:**
 {
