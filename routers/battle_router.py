@@ -13,7 +13,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 
 router = APIRouter()
 
-@router.post("/player-battle", tags=["LLM Generate for Combat between 2 players"])
+@router.post("/player-battle", tags=["LLM Generation"])
 async def generate_battle(req: BattleRequest):
     """
     Service nhận input từ backend, gọi đến LLM để sinh combat và trả về JSON hợp lệ.

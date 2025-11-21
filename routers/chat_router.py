@@ -13,7 +13,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 
 router = APIRouter()
 
-@router.post("/chat", tags=["LLM Generate for Normal Information"])
+@router.post("/chat", tags=["LLM Generation"])
 async def generate_chat(req: ChatRequest):
     """
     Service nhận input từ backend, gọi đến LLM để sinh nội dung game và trả về JSON hợp lệ.
@@ -21,11 +21,11 @@ async def generate_chat(req: ChatRequest):
     **Request Body:**
 
     - `user_id` (str, **bắt buộc**): ID định danh duy nhất của người chơi.
-    - `message` (str, **bắt buộc**): Lệnh hoặc tin nhắn người chơi vừa gửi (ví dụ: "/start", "/choose 1").
+    - `message` (str, **bắt buộc**): Lệnh hoặc tin nhắn người chơi vừa gửi.
     - `all_region_data` (List[Dict], **bắt buộc**): Danh sách các đối tượng JSON chứa dữ liệu chi tiết của tất cả các vùng.
-    - `current_stats` (Dict, **bắt buộc**): Dictionary chứa các chỉ số hiện tại của người chơi (level, hp, atk...).
+    - `current_stats` (Dict, **bắt buộc**): Dictionary chứa các chỉ số hiện tại của người chơi.
     - `next_stats` (Dict, **bắt buộc**): Dictionary chứa các chỉ số của người chơi ở level tiếp theo.
-    - `user_state` (Dict, **bắt buộc**): Dictionary chứa state tổng của người chơi (faction, gender,...).
+    - `user_state` (Dict, **bắt buộc**): Dictionary chứa state tổng của người chơi.
     - `recent_messages` (Optional[List[Dict]]): Lịch sử các tin nhắn gần đây giữa user và assistant.
     - `last_story` (Optional[Dict]): JSON của story/quest gần nhất mà model đã sinh ra.
     """
@@ -63,4 +63,3 @@ async def generate_chat(req: ChatRequest):
     except Exception as e:
         logging.error(f"Lỗi không mong muốn: {e}")
         raise HTTPException(status_code=500, detail=f"Ollama request thất bại: {e}")
-    
