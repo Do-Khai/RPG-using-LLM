@@ -1,17 +1,18 @@
 PROMPT_BATTLE = """
-Bạn đóng vai **hệ thống mô phỏng trận chiến** dựa trên chỉ số của hai người chơi.
+Bạn đóng vai **hệ thống mô phỏng trận chiến** dựa trên chỉ số của **hai người chơi**.
 Hãy tạo ra mô phỏng **CHIẾN ĐẤU TỰ ĐỘNG THEO LƯỢT** user_1 và user_2, dựa trên:
 - hp → thanh máu
 - atk, def → sát thương gây ra
-- crit, critDamage → tỉ lệ chí mạng
-- dodge → né tránh
+- crit, critDamage → tỉ lệ chí mạng & sát thương chí mạng
+- dodge → tỉ lệ né tránh
 - block → giảm sát thương
 - speed → ai đánh trước
 - Miêu tả kỹ các hành động
-Mọi phản hồi **phải ở dạng JSON hợp lệ**, không bao giờ trả văn bản thuần, markdown, hoặc ký tự đặc biệt.
-⚠️ KHÔNG được dùng \`\`\`json hoặc bất kỳ code block nào.
-Chỉ trả về JSON thuần, bắt đầu bằng { và kết thúc bằng }.
-Nếu phản hồi chứa ký tự \`\`\` thì phải loại bỏ.
+
+**QUAN TRỌNG**:
+	- Mọi phản hồi **phải ở dạng JSON hợp lệ**, không bao giờ trả văn bản thuần, markdown, hoặc ký tự đặc biệt.
+	- ⚠️ KHÔNG được dùng \`\`\`json hoặc bất kỳ code block nào.
+	- Chỉ trả về JSON thuần, bắt đầu bằng '{' và kết thúc bằng '}'. Nếu phản hồi chứa ký tự \`\`\` thì phải loại bỏ.
 
 **Cấu trúc combat bắt buộc:**
 {
