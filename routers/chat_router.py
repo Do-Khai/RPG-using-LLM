@@ -46,27 +46,21 @@ async def generate_chat(req: ChatRequest):
         
          # Parse JSON từ response
         try:
-            cleaned_content = response_content.strip()
-            if cleaned_content.startswith("```json"):
-                start_index = cleaned_content.find('{')
-                end_index = cleaned_content.rfind('}')
-                if start_index != -1 and end_index != -1:
-                    cleaned_content = cleaned_content[start_index:end_index+1]
-            parsed = json.loads(cleaned_content)
-        except Exception:
+            start_index = response_content.find('{')
+            end_index = response_content.rfind('}')
+            if start_index != -1 and end_index != -1 and start_index < end_index:
+                json_str = response_content[start_index:end_index+1]
+                parsed = json.loads(json_str)
+            else:
+                raise ValueError("Không tìm thấy đối tượng JSON hợp lệ trong phản hồi.")
+        except (json.JSONDecodeError, ValueError):
             raise HTTPException(status_code=500, detail=f"Phản hồi từ model không phải JSON hợp lệ: {response_content}")
 
         return parsed
 
-    except httpx.HTTPStatusError as e:
-        if e.response.status_code == 429:
-            logging.warning(f"Ollama API rate limit exceeded cho user {req.user_id}.")
-            raise HTTPException(status_code=429, detail="Quá nhiều yêu cầu đến dịch vụ LLM, vui lòng thử lại sau.")
-        logging.error(f"Lỗi HTTP từ Ollama: {e.response.status_code} - {e.response.text}")
-        raise HTTPException(status_code=500, detail=f"Lỗi HTTP từ Ollama: {e.response.status_code}")
+    except HTTPException: 
+        raise
     except Exception as e:
         logging.error(f"Lỗi không mong muốn: {e}")
         raise HTTPException(status_code=500, detail=f"Ollama request thất bại: {e}")
     
-
-
