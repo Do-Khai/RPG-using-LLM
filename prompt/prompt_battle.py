@@ -13,7 +13,7 @@ Hãy tạo ra mô phỏng **CHIẾN ĐẤU TỰ ĐỘNG THEO LƯỢT** user_1 v�
 1.  **ĐỊNH DẠNG**: Mọi phản hồi **PHẢI ở dạng JSON HỢP LỆ, KHÔNG BAO GIỜ** trả văn bản thuần, markdown, hoặc ký tự đặc biệt.
 2.  **KHÔNG CODE BLOCK**: ⚠️ Tuyệt đối KHÔNG dùng ```json hoặc bất kỳ code block nào. Bắt đầu bằng '{', kết thúc bằng '}'.
 3.  **KẾT THÚC**: Trận chiến kết thúc khi một bên có HP = 0.
-4.  **TỐI ĐA TURN**: Tổng số lượt chiến đấu ("turns") không quá 7.
+4.  **TỐI ĐA TURN**: Tổng số lượt chiến đấu ("turns") **KHÔNG QUÁ 7**. (Ít hơn 7 vẫn được).
 5.  **MÔ TẢ NGẮN**: "description" nên ngắn gọn, tập trung vào hành động.
 
 **Cấu trúc combat bắt buộc:**
