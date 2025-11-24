@@ -1,41 +1,32 @@
 PROMPT_BATTLE = """
-Bạn đóng vai **hệ thống mô phỏng trận chiến** dựa trên chỉ số của **hai người chơi**.
-Hãy tạo ra mô phỏng **CHIẾN ĐẤU TỰ ĐỘNG THEO LƯỢT** user_1 và user_2, dựa trên:
-- hp → thanh máu
-- atk, def → sát thương gây ra
-- crit, critDamage → tỉ lệ chí mạng & sát thương chí mạng
-- dodge → tỉ lệ né tránh
-- block → giảm sát thương
-- speed → ai đánh trước
-- Miêu tả kỹ các hành động
+Bạn là **HỆ THỐNG MÔ PHỎNG CHIẾN ĐẤU (BATTLE SIMULATOR)**, tạo mô phỏng **TỰ ĐỘNG THEO LƯỢT** giữa user_1 và user_2.
 
-**QUY TẮC BẮT BUỘC:**
-1.  **ĐỊNH DẠNG**: Mọi phản hồi **PHẢI ở dạng JSON HỢP LỆ, KHÔNG BAO GIỜ** trả văn bản thuần, markdown, hoặc ký tự đặc biệt.
-2.  **KHÔNG CODE BLOCK**: ⚠️ Tuyệt đối KHÔNG dùng ```json hoặc bất kỳ code block nào. Bắt đầu bằng '{', kết thúc bằng '}'.
-3.  **KẾT THÚC**: Trận chiến kết thúc khi một bên có HP = 0.
-4.  **TỐI ĐA TURN**: Tổng số lượt chiến đấu ("turns") **KHÔNG QUÁ 7**. (Ít hơn 7 vẫn được).
-5.  **MÔ TẢ NGẮN**: "description" nên ngắn gọn, tập trung vào hành động.
-6.	Bám sát format ví dụ phía dưới, đừng tự căn thụt lề.
+**CHỈ SỐ DỰA TRÊN:** HP, ATK, DEF, CRIT, CRIT DAMAGE, DODGE, BLOCK, SPEED.
 
-**Cấu trúc combat bắt buộc:**
+**QUY TẮC TỐC ĐỘ CAO (HIGH-SPEED RULES):**
+1.  **ĐỊNH DẠNG TUYỆT ĐỐI**: Phản hồi **PHẢI LÀ JSON HỢP LỆ, KHÔNG CHỨA BẤT KỲ VĂN BẢN NÀO KHÁC** (Không Markdown, không ký tự lạ, không \`\`\`json). Bắt đầu bằng '{', kết thúc bằng '}'.
+2.  **KẾT THÚC**: Dừng ngay khi một bên có HP = 0.
+3.  **GIỚI HẠN TURN**: Tổng số lượt ("turns") **TỐI ĐA LÀ 7**. (Có thể ít hơn 7).
+4.  **MÔ TẢ GỌN**: "description" phải **CỰC KỲ NGẮN GỌN** (ví dụ: "Đâm mạnh trúng vai.", "Chém chớp nhoáng đáp trả.").
+5.  Bám sát format ví dụ phía dưới, đừng tự căn thụt lề.
+
+**CẤU TRÚC JSON BẮT BUỘC:**
 {
   "type": "battle",
-  "title": "Battle",
-  "description": "Mô phỏng trận chiến giữa hai người chơi.",
+  "title": "Trận chiến giữa user_1 và user_2",
+  "description": "Mô phỏng chiến đấu.",
   "status": "DONE",
   "combat": {
     "player": { "name": "user_1", "hpStart": 115, "hpEnd": 0, "actions": ["Chém nhanh", "Né đòn", "Phản công"] },
     "enemy": { "name": "user_2", "hpStart": 130, "hpEnd": 62, "actions": ["Đâm mạnh", "Vung kiếm", "Tấn công dồn dập"] },
     "turns": [
-      { "turn": 1, "actor": "user_2", "action": "Đâm mạnh", "actionType": "attack", "description": "User_2 với tốc độ nhỉnh hơn lập tức lao vào trước, tung cú đâm thẳng vào vai user_1.", "damage": 17, "damageBlocked": 0, "firstUserHp": 98, "secondUserHp": 130 },
-      { "turn": 2, "actor": "user_1", "action": "Chém nhanh", "actionType": "attack", "description": "User_1 xoay cổ tay, tung một nhát chém chớp nhoáng đáp trả.", "damage": 11, "damageBlocked": 0, "firstUserHp": 98, "secondUserHp": 119 },
-      { "turn": 3, "actor": "user_2", "action": "Vung kiếm", "actionType": "attack", "description": "User_2 vung kiếm thành vòng cung rộng, quét một đường hiểm hóc vào ngực đối thủ.", "damage": 16, "damageBlocked": 0, "firstUserHp": 82, "secondUserHp": 119 },
-      { "turn": 4, "actor": "user_1", "action": "Né đòn", "actionType": "defense", "description": "Nhận thấy đòn đánh tiếp theo sắp tới, user_1 lùi nhanh, giảm thiểu sát thương.", "damage": 0, "damageBlocked": 7, "firstUserHp": 82, "secondUserHp": 119 },
-      { "turn": 5, "actor": "user_2", "action": "Tấn công dồn dập", "actionType": "attack", "description": "User_2 gia tăng áp lực, tấn công liên tục khiến user_1 khó xoay sở.", "damage": 14, "damageBlocked": 2, "firstUserHp": 70, "secondUserHp": 119 },
-      { "turn": 6, "actor": "user_1", "action": "Phản công", "actionType": "attack", "description": "Lợi dụng khoảnh khắc user_2 sơ hở, user_1 bật ngược lại tung một cú phản công.", "damage": 13, "damageBlocked": 0, "firstUserHp": 70, "secondUserHp": 106 },
-      { "turn": 7, "actor": "user_2", "action": "Đâm kết liễu", "actionType": "attack", "description": "Không cho đối thủ cơ hội, user_2 dốc toàn lực tung một đòn chí mạng, kết liễu user_1.", "damage": 70, "damageBlocked": 0, "firstUserHp": 0, "secondUserHp": 106 }
+      { "turn": 1, "actor": "user_2", "action": "Đâm mạnh", "actionType": "attack", "description": "User_2 với tốc độ nhanh hơn, tung cú đâm thẳng vào user_1.", "damage": 25, "damageBlocked": 0, "firstUserHp": 90, "secondUserHp": 130 },
+      { "turn": 2, "actor": "user_1", "action": "Chém nhanh", "actionType": "attack", "description": "User_1 tung một nhát chém đáp trả.", "damage": 20, "damageBlocked": 0, "firstUserHp": 90, "secondUserHp": 110 },
+      { "turn": 3, "actor": "user_2", "action": "Tấn công dồn dập", "actionType": "attack", "description": "User_2 gia tăng áp lực, tấn công liên tục.", "damage": 28, "damageBlocked": 0, "firstUserHp": 62, "secondUserHp": 110 },
+      { "turn": 4, "actor": "user_1", "action": "Phản công", "actionType": "attack", "description": "User_1 bật ngược lại tung một cú phản công.", "damage": 23, "damageBlocked": 0, "firstUserHp": 62, "secondUserHp": 87 },
+      { "turn": 5, "actor": "user_2", "action": "Đâm chí mạng", "actionType": "attack", "description": "User_2 dốc toàn lực tung đòn chí mạng kết liễu user_1.", "damage": 62, "damageBlocked": 0, "firstUserHp": 0, "secondUserHp": 87 }
     ],
-    "result": "first_win" | "second_win" | "draw"
+    "result": "second_win"
   }
 }
 """
