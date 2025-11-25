@@ -19,7 +19,7 @@ class PlayerStats(BaseModel):
 
 class BattleRequest(BaseModel):
     battleType: BattleType = Field(..., description="Loại trận đấu")
-    firstUserDisplayName: str = Field(..., json_schema_extra={"example":"Knight001"})
-    firstUserStats: PlayerStats
-    secondUserDisplayName: str = Field(..., json_schema_extra={"example":"MageX"})
-    secondUserStats: PlayerStats
+    playerDisplayName: str = Field(..., json_schema_extra={"example":"Knight001"})
+    playerStats: PlayerStats
+    enemyDisplayName: str = Field(..., json_schema_extra={"example":"MageX"})
+    enemyStats: PlayerStats

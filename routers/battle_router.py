@@ -20,8 +20,8 @@ async def generate_battle(req: BattleRequest):
 
     **Request Body:**
     - `battleType` (str, **bắt buộc**): Loại trận đấu. Các giá trị hợp lệ: "CASUAL"
-    - `firstUserDisplayName` (str, **bắt buộc**): Tên hiển thị của người chơi thứ nhất.
-    - `firstUserStats` (Dict, **bắt buộc**): Dictionary chứa các chỉ số của người chơi thứ nhất.
+    - `playerDisplayName` (str, **bắt buộc**): Tên hiển thị của người chơi thứ nhất.
+    - `playerStats` (Dict, **bắt buộc**): Dictionary chứa các chỉ số của người chơi thứ nhất.
         - `hp` (float): Máu.
         - `atk` (float): Sức tấn công.
         - `def` (float): Phòng thủ.
@@ -29,8 +29,8 @@ async def generate_battle(req: BattleRequest):
         - `critDamage` (float): Sát thương chí mạng.
         - `dodge` (float): Tỉ lệ né đòn (0-100).
         - `speed` (float): Tốc độ.
-    - `secondUserDisplayName` (str, **bắt buộc**): Tên hiển thị của người chơi thứ hai.
-    - `secondUserStats` (Dict, **bắt buộc**): Dictionary chứa các chỉ số của người chơi thứ hai (cấu trúc tương tự `firstUserStats`).
+    - `enemyDisplayName` (str, **bắt buộc**): Tên hiển thị của người chơi thứ hai.
+    - `enemyStats` (Dict, **bắt buộc**): Dictionary chứa các chỉ số của người chơi thứ hai (cấu trúc tương tự `playerStats`).
     """
     try:
         payload = prepare_payload_battle(req)

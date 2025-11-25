@@ -12,15 +12,15 @@ def prepare_payload_battle(req: BattleRequest) -> dict:
     """
     Chuẩn bị payload battle để gửi đến mô hình.
     """
-    first_user_stats_dict = req.firstUserStats.model_dump(by_alias=True)
-    second_user_stats_dict = req.secondUserStats.model_dump(by_alias=True)
+    player_stats_dict = req.playerStats.model_dump(by_alias=True)
+    enemy_stats_dict = req.enemyStats.model_dump(by_alias=True)
     system_prompt_content = f"""
     {PROMPT_BATTLE}
     ---
     ## ⚙️ THÔNG SỐ CỦA 2 NGƯỜI CHƠI
     - **Loại trận đấu**: {req.battleType.value}
-    - **Người chơi 1**: Tên: {req.firstUserDisplayName}, Chỉ số: {json.dumps(first_user_stats_dict, ensure_ascii=False)}
-    - **Người chơi 2**: Tên: {req.secondUserDisplayName}, Chỉ số: {json.dumps(second_user_stats_dict, ensure_ascii=False)}
+    - **Người chơi 1**: Tên: {req.playerDisplayName}, Chỉ số: {json.dumps(player_stats_dict, ensure_ascii=False)}
+    - **Người chơi 2**: Tên: {req.enemyDisplayName}, Chỉ số: {json.dumps(enemy_stats_dict, ensure_ascii=False)}
     ---
     """
     messages = [{"role": "system", "content": system_prompt_content}]
@@ -28,8 +28,9 @@ def prepare_payload_battle(req: BattleRequest) -> dict:
         "model": MODEL_NAME,
         "messages": messages,
         "stream": False,
+        "max_token": 1200
     }
-    logging.info(f"Gửi payload tới Ollama với player1: {req.firstUserDisplayName} và player2: {req.secondUserDisplayName}" )
+    logging.info(f"Gửi payload tới Ollama với player1: {req.playerDisplayName} và player2: {req.enemyDisplayName}" )
     return payload 
 
 
