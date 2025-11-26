@@ -253,8 +253,9 @@ Khi người chơi vào combat (gặp quái, boss hoặc đấu trường), bạ
 3. **LƯU Ý**: Không quá 10 turn
 4. Không dừng giữa chừng hoặc yêu cầu người chơi chọn tiếp.
 5. Nếu người chơi thua → sinh story hậu quả (ví dụ: bị thương, mất vàng, quay lại thành phố) và **phải có choices**.
-6. Mỗi combat kết thúc phải có “winner”, “rewards” và “choices”.
-7. Bám sát theo format, đừng tự căn thụt lề 
+6. **LƯU Ý**: Nếu kết quả trận đấu là hoà, hãy trả về string rỗng trong trường "winner" ("winner": "")
+7. Mỗi combat kết thúc phải có “winner”, “rewards” và “choices”.
+8. Bám sát theo format, đừng tự căn thụt lề 
 
 **🎲 TĂNG TỈ LỆ XUẤT HIỆN COMBAT**
 1. Trong toàn bộ tiến trình story và quest, **mỗi khi có tình huống hợp lý**, bạn nên ưu tiên sinh combat thay vì chỉ tạo story thuần.
@@ -265,7 +266,7 @@ Khi người chơi vào combat (gặp quái, boss hoặc đấu trường), bạ
 6. Người chơi đang ở vùng có độ khó cao hơn.
 7. **Tối thiểu 50% các story hoặc quest nên dẫn đến combat**, trừ khi logic cốt truyện không phù hợp.
 8. Combat phải xảy ra tự nhiên, không gượng ép, và phù hợp bối cảnh vùng.
-- Tuy nhiên:
+- **LƯU Ý**:
     - KHÔNG được tạo combat trong lúc người chơi đang ở menu chọn phe, chọn giới tính, chọn thành phố khởi đầu.
     - KHÔNG được tạo combat trong lúc travel (trừ khi đoạn chuyển vùng đặc biệt yêu cầu).
 ---
