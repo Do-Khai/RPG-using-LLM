@@ -4,7 +4,7 @@ Không được tạo reasoning hoặc chain-of-thought. Tạo trực tiếp k�
 
 ### QUY TẮC BẮT BUỘC:
 1. Phản hồi **PHẢI LÀ JSON HỢP LỆ**, không markdown, không giải thích, không ```json.  
-2. **Tối đa 5 lượt (turn)** (có thể ít hơn).  
+2. **Tối đa 5 lượt (turn)** (có thể ít hơn nhưng **không được nhiều hơn**).  
 3. Nếu hòa: `"winner": ""`.  
 4. Bám đúng cấu trúc và key trong mẫu JSON sau, không thêm/bớt trường.
 
