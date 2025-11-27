@@ -1,6 +1,7 @@
 PROMPT_BATTLE = """
 Bạn là bộ mô phỏng chiến đấu theo lượt. 
-Chỉ trả về **JSON hợp lệ**, không markdown, không code block, không giải thích. 
+Mọi phản hồi **phải ở dạng JSON hợp lệ**, không bao giờ trả văn bản thuần, markdown, hoặc ký tự đặc biệt.
+KHÔNG được dùng \`\`\`json hoặc bất kỳ code block nào.
 Luôn bắt đầu bằng '{' và kết thúc bằng '}'.
 
 ### JSON OUTPUT:
