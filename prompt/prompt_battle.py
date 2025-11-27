@@ -25,7 +25,7 @@ Chỉ trả về JSON thuần, bắt đầu bằng '{' và kết thúc bằng '}
 
 **Quy tắc sinh combat:**
 1. "turns" mô tả toàn bộ diễn tiến đến khi 1 bên HP = 0.
-2. **LƯU Ý**: Không quá 6 turn
+2. **LƯU Ý**: Không quá 6 turn combat
 3. Không được thay đổi tên người chơi trong khi combat.
 4. Nếu hoà, "result": ""
 """
