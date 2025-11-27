@@ -19,7 +19,7 @@ Chỉ trả về JSON thuần, bắt đầu bằng '{' và kết thúc bằng '}
     { "turn": 4, "actor": "player", "description": "Lợi dụng khoảnh khắc user_2 sơ hở, user_1 bật ngược lại tung một cú phản công.", "damage": 23, "damageBlocked": 0, "playerHp": 62, "enemyHp": 87 },
     { "turn": 5, "actor": "enemy", "description": "user_2 dốc toàn lực tung đòn chí mạng, mũi kiếm xuyên thủng phòng thủ và kết liễu user_1.", "damage": 62, "damageBlocked": 0, "playerHp": 0, "enemyHp": 87 }
   ],
-  "result": "enemy" 
+  "winner": "enemy" 
 }
 }
 
