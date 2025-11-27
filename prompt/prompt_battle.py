@@ -1,5 +1,5 @@
 PROMPT_BATTLE = """
-Bạn là bộ mô phỏng chiến đấu theo lượt. 
+Bạn là bộ mô phỏng chiến đấu **theo lượt**. 
 Mọi phản hồi **phải ở dạng JSON hợp lệ**, không bao giờ trả văn bản thuần, markdown, hoặc ký tự đặc biệt.
 KHÔNG được dùng \`\`\`json hoặc bất kỳ code block nào.
 Luôn bắt đầu bằng '{' và kết thúc bằng '}'.
@@ -35,6 +35,7 @@ Luôn bắt đầu bằng '{' và kết thúc bằng '}'.
 5. Nếu damage ≥ HP còn lại → HP = 0.
 6. **"hpEnd" phải trùng** playerHp/enemyHp ở lượt cuối.
 7. Khi một bên gục, thêm mô tả mang tính kết liễu trong lượt cuối.
+8. Trong trường hợp hoà nhau (hết turn cuối mà không có ai gục), thêm mô tả mang tính "anh hùng trọng anh hùng".
 
 ### PHONG CÁCH MÔ TẢ:
 - Viết theo phong cách chiến đấu phim **kiếm hiệp**.
