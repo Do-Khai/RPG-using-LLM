@@ -25,7 +25,7 @@ async def generate_battle(req: BattleRequest):
         - `hp` (float): Máu.
         - `atk` (float): Sức tấn công.
         - `def` (float): Phòng thủ.
-        - `crit` (float): Tỉ lệ chí mạng (0-100).
+        - `critPercentage` (float): Tỉ lệ chí mạng (0-100).
         - `critDamage` (float): Sát thương chí mạng.
         - `dodge` (float): Tỉ lệ né đòn (0-100).
         - `speed` (float): Tốc độ.

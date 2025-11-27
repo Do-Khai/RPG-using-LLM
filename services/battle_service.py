@@ -36,6 +36,8 @@ def prepare_payload_battle(req: BattleRequest) -> dict:
         "max_token": 800
     }
     logging.info(f"Gửi payload tới Ollama với player1: {req.playerDisplayName} và player2: {req.enemyDisplayName}" )
+    logging.info(f"Thông số của player:\n {req.playerStats}\n")
+    logging.info(f"Thông số của enemy:\n {req.enemyStats}\n")
     return payload 
 
 

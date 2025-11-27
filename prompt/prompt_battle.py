@@ -23,17 +23,17 @@ Luôn bắt đầu bằng '{' và kết thúc bằng '}'.
         "enemyHp": 0
       }
     ],
-    "result": "player | enemy |  "
+    "winner": "player | enemy |  "
   }
 }
 
 ### QUY TẮC BẮT BUỘC:
 1. Tạo ra một trận chiến đầy đủ theo lượt, dừng khi một bên HP = 0.
-2. Tổng số lượt (turn) **không quá 6**.
+2. Tổng số lượt (turn) **không quá 7**.
 3. Sát thương phải hợp lý và giảm HP chính xác từng lượt.
-4. Khi một bên gục, thêm mô tả mang tính cao trào trong lượt cuối.
-5. Nếu hoà: "result": ""
-6. Không được thêm trường ngoài schema.
+4. Nếu sát thương lớn hơn HP còn lại, HP cuối cùng phải là 0 và kết thúc trận đấu.**
+5. Khi một bên gục, thêm mô tả mang tính cao trào trong lượt cuối.
+6. Nếu hoà: "winner": ""
 
 ### CÁCH VIẾT MÔ TẢ (bắt buộc để chất lượng cao):
 - Viết theo phong cách chiến đấu phim kiếm hiệp: nhịp nhanh, chi tiết, mạch lạc.
@@ -43,7 +43,4 @@ Luôn bắt đầu bằng '{' và kết thúc bằng '}'.
   • tốc độ hoặc kỹ thuật  
   • vị trí đánh trúng  
 - Không dùng từ sáo rỗng
-
-### MỤC TIÊU CUỐI:
-Sinh ra JSON chiến đấu hoàn chỉnh, đẹp, mạnh mẽ, mô tả chi tiết, tuân thủ đầy đủ dữ liệu và cấu trúc trên.
 """
