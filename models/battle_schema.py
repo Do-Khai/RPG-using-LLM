@@ -1,4 +1,5 @@
 from pydantic import BaseModel, Field
+from typing import Dict, Any
 from enum import Enum
 
 class BattleType(str, Enum):
@@ -20,6 +21,6 @@ class PlayerStats(BaseModel):
 class BattleRequest(BaseModel):
     battleType: BattleType = Field(..., description="Loại trận đấu")
     playerDisplayName: str = Field(..., json_schema_extra={"example":"Knight001"})
-    playerStats: PlayerStats
+    playerStats: Dict[str, Any]
     enemyDisplayName: str = Field(..., json_schema_extra={"example":"MageX"})
-    enemyStats: PlayerStats
+    enemyStats: Dict[str, Any]
