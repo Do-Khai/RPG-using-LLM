@@ -6,7 +6,7 @@ Luôn bắt đầu bằng '{' và kết thúc bằng '}'.
 ### YÊU CẦU JSON:
 {
   "type": "battle",
-  "description": "Trận đấu giữa {player} và {enemy}",
+  "description": "Trận đấu giữa {user_1} và {user_2}",
   "status": "DONE",
   "combat": {
     "player": { "name": "", "hpStart": 0, "hpEnd": 0 },
@@ -15,32 +15,35 @@ Luôn bắt đầu bằng '{' và kết thúc bằng '}'.
       {
         "turn": 1,
         "actor": "player | enemy",
-        "actionType": "attack",
-        "description": "Mô tả ngắn gọn, sinh động, hành động rõ ràng.",
+        "description": "Mô tả không quá dài, sinh động, hành động rõ ràng.",
         "damage": 0,
         "damageBlocked": 0,
         "playerHp": 0,
         "enemyHp": 0
       }
     ],
-    "winner": "player | enemy |  "
+    "winner": "enemy"
   }
 }
 
 ### QUY TẮC BẮT BUỘC:
-1. Tạo ra một trận chiến đầy đủ theo lượt, dừng khi một bên HP = 0.
-2. Tổng số lượt (turn) **không quá 7**.
-3. Sát thương phải hợp lý và giảm HP chính xác từng lượt.
-4. Nếu sát thương lớn hơn HP còn lại, HP cuối cùng phải là 0 và kết thúc trận đấu.**
-5. Khi một bên gục, thêm mô tả mang tính cao trào trong lượt cuối.
-6. Nếu hoà: "winner": ""
+1. Trong "actor" và "winner" không trả về tên player mà trả về "player" hoặc "enemy".
+2. Tạo ra một trận chiến đầy đủ theo lượt, dừng ngay khi một bên HP = 0 trong turn.
+3. Tổng số lượt (turn) **không quá 7**.
+4. Sử dụng chính xác sát thương ở atk, critDamage và giảm HP chính xác từng lượt.
+5. Nếu sát thương lớn hơn HP còn lại, HP cuối cùng **vẫn phải là 0** và kết thúc trận đấu.**
+6. Khi một bên gục, thêm mô tả mang tính kết liễu trong lượt cuối.
+7. Kết quả trận đấu ("winner") chỉ gồm ["player", "enemy", " " (nếu hoà)]
 
 ### CÁCH VIẾT MÔ TẢ (bắt buộc để chất lượng cao):
-- Viết theo phong cách chiến đấu phim kiếm hiệp: nhịp nhanh, chi tiết, mạch lạc.
-- Mô tả trong khoảng 12 từ
+- Viết theo phong cách chiến đấu phim **kiếm hiệp**: nhịp nhanh, chi tiết, hấp dẫn
 - Mỗi mô tả cần nêu:
-  • cách ra đòn  
-  • tốc độ hoặc kỹ thuật  
-  • vị trí đánh trúng  
+  • Cách ra đòn  
+  • Tốc độ hoặc kỹ thuật
+  • Vị trí đánh trúng  
+- Ví dụ: 
+  • "{user_2} vung kiếm, quét một đường hiểm hóc vào ngực đối thủ"
+  • "Nhận thấy đòn đánh tiếp theo, {user_1} lùi nhanh, giảm thiểu sát thương."
+  • "Lợi dụng khoảnh khắc {user_2} sơ hở, {user_1} bật ngược lại tung một cú phản công."
 - Không dùng từ sáo rỗng
 """
