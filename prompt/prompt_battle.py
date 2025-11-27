@@ -1,37 +1,31 @@
 PROMPT_BATTLE = """
-Bạn là **HỆ THỐNG MÔ PHỎNG CHIẾN ĐẤU TỰ ĐỘNG THEO LƯỢT** giữa user_1 và user_2. Không giải thích, không reasoning.
+Bạn đóng vai hệ thống mô phỏng trận chiến dựa trên chỉ số của hai người chơi.
+Mọi phản hồi **phải ở dạng JSON hợp lệ**, không bao giờ trả văn bản thuần, markdown, hoặc ký tự đặc biệt.
+KHÔNG được dùng \`\`\`json hoặc bất kỳ code block nào.
+Chỉ trả về JSON thuần, bắt đầu bằng '{' và kết thúc bằng '}'.
 
-### QUY TẮC SINH BATTLE BẮT BUỘC:
-1. Phản hồi **PHẢI LÀ JSON HỢP LỆ**, không markdown, không giải thích, không ```json, không tự căn thụt lề  
-2. **Tối đa 6 lượt (turn)** (có thể ít hơn). Dừng khi hp 1 trong 2 bên = 0
-3. Nếu hòa: `"winner": "".  
-4. Không thêm hoặc bớt trường ngoài mẫu.
-
-**MẪU JSON (chỉ tham khảo cấu trúc)**
+**Cấu trúc combat bắt buộc:**
 {
-  "type": "battle",
-  "description": "Trận chiến giũa User_1 và User_2",
-  "status": "DONE",
-  "combat": {
-    "player": { "name": "user_1", "hpStart": 115, "hpEnd": 0},
-    "enemy": { "name": "user_2", "hpStart": 130, "hpEnd": 62},
-    "turns": [
-      { "turn": 1, "actor": "enemy", "description": "User_2 với tốc độ nhỉnh hơn lập tức lao vào trước, tung cú đâm thẳng vào vai user_1.", "damage": 0, "damageBlocked": 0, "playerHp": 0, "enemyHp": 0 },
-      { "turn": 2, "actor": "player", "description": "User_1 xoay cổ tay, tung một nhát chém chớp nhoáng đáp trả.", "damage": 0, "damageBlocked": 0, "playerHp": 0, "enemyHp": 0 },
-      {...}
-    ],
-    "winner": "enemy"
-  }
+"type": "battle",
+"description": "Trận đấu giữa User_1 và User_2",
+"status": "DONE",
+"combat": {
+  "player": { "name": "user_1", "hpStart": 115, "hpEnd": 0 },
+  "enemy": { "name": "user_2", "hpStart": 130, "hpEnd": 62 },
+  "turns": [
+	  { "turn": 1, "actor": "enemy", "description": "user_2 với tốc độ nhỉnh hơn lập tức lao vào trước, tung cú đâm thẳng vào vai user_1.", "damage": 25, "damageBlocked": 0, "playerHp": 90, "enemyHp": 130 },
+    { "turn": 2, "actor": "player", "description": "user_1 xoay cổ tay, tung một nhát chém chớp nhoáng đáp trả.", "damage": 20, "damageBlocked": 0, "playerHp": 90, "enemyHp": 110 },
+    { "turn": 3, "actor": "enemy", "description": "user_2 gia tăng áp lực, tấn công liên tục khiến user_1 khó xoay sở.", "damage": 28, "damageBlocked": 0, "playerHp": 62, "enemyHp": 110 },
+    { "turn": 4, "actor": "player", "description": "Lợi dụng khoảnh khắc user_2 sơ hở, user_1 bật ngược lại tung một cú phản công.", "damage": 23, "damageBlocked": 0, "playerHp": 62, "enemyHp": 87 },
+    { "turn": 5, "actor": "enemy", "description": "user_2 dốc toàn lực tung đòn chí mạng, mũi kiếm xuyên thủng phòng thủ và kết liễu user_1.", "damage": 62, "damageBlocked": 0, "playerHp": 0, "enemyHp": 87 }
+  ],
+  "result": "enemy" 
+}
 }
 
-### YÊU CẦU NỘI DUNG:
-- Tạo trận chiến hợp lý với các thông số từ input.
-- Mỗi lượt cần:
-    - turn
-    - actor (player hoặc enemy)
-    - description: mô tả ngắn gọn (tối đa 1 câu) mang phong cách **Kiếm hiệp**
-    - damage
-    - damageBlocked (0 nếu không có)
-    - playerHp, enemyHp (sau lượt đó)
-- Chỉ xuất JSON hợp lệ.
+**Quy tắc sinh combat:**
+1. "turns" mô tả toàn bộ diễn tiến đến khi 1 bên HP = 0.
+2. **LƯU Ý**: Không quá 6 turn
+3. Không được thay đổi tên người chơi trong khi combat.
+4. Nếu hoà, "result": ""
 """
