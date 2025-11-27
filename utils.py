@@ -6,6 +6,7 @@ load_dotenv()
 
 OLLAMA_URL = os.getenv("OLLAMA_CLOUD")
 MODEL_NAME = os.getenv("MODEL_NAME")
+BATTLE_MODEL = os.getenv("BATTLE_MODEL")
 
 @retry(
     retry=retry_if_exception_type((httpx.HTTPStatusError, httpx.TimeoutException)),

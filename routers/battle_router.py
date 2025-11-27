@@ -1,11 +1,9 @@
 from fastapi import APIRouter, HTTPException
 from models.battle_schema import BattleRequest
 from services.battle_service import prepare_payload_battle
-from utils import call_ollama, MODEL_NAME
+from utils import call_ollama, BATTLE_MODEL
 import json
-import os
 import logging
-import httpx
 import time
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
@@ -39,7 +37,7 @@ async def generate_battle(req: BattleRequest):
         response_content = response.get("message", {}).get("content", "") or response.get("response", "")
         end_time = time.time()
         response_time = end_time - start_time
-        logging.info(f"Thời gian phản hồi của mô hình {MODEL_NAME}: {response_time:.2f}s")
+        logging.info(f"Thời gian phản hồi của mô hình {BATTLE_MODEL}: {response_time:.2f}s")
         
         if not response_content:
             raise HTTPException(status_code=500, detail="Ollama trả về response rỗng. Kiểm tra lại model được load và chạy đúng chưa.")

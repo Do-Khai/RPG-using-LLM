@@ -2,7 +2,7 @@ from prompt.prompt_battle import PROMPT_BATTLE
 import json
 import logging
 import os
-from utils import MODEL_NAME
+from utils import BATTLE_MODEL
 from models.battle_schema import BattleRequest
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
@@ -27,7 +27,7 @@ def prepare_payload_battle(req: BattleRequest) -> dict:
     ---
     """
     payload = {
-        "model": MODEL_NAME,
+        "model": BATTLE_MODEL,
         "messages": [
             {"role": "system", "content": system_prompt_content},
             {"role": "user", "content": user_prompt}
