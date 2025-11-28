@@ -4,7 +4,7 @@ from routers import chat_router, battle_router
 from dotenv import load_dotenv
 load_dotenv()
 
-required_env_vars = ["OLLAMA_CLOUD", "OLLAMA_KEY", "MODEL_NAME", "BATTLE_MODEL"]
+required_env_vars = ["OLLAMA_CLOUD", "MODEL_NAME", "BATTLE_MODEL"]
 for var in required_env_vars:
     if not os.getenv(var):
         raise RuntimeError(f"Thiếu biến môi trường: {var}")
