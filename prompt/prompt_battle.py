@@ -5,7 +5,7 @@ Luôn bắt đầu bằng '{' và kết thúc bằng '}'.
 
 LOGIC CHIẾN ĐẤU 
 1. damage = atk
-2. Crit: nếu random(0-100) < critPercentage -> damage = critDamage
+2. Crit: nếu random(0-100) < critPercentage -> damage = critDamage * atk / 100
 3. damageBlocked: nếu random(0-100) > 50 -> int(atk * (def/100)) else 0
 4. Cập nhật HP: hp = max(0, hp - (damage - damageBlocked))
 
@@ -33,13 +33,13 @@ LOGIC CHIẾN ĐẤU
 }
 
 ## QUY TẮC BẮT BUỘC
-1. **Tối đa 6 turn**. Hết 6 turn mà không có ai hp = 0 -> Hoà. 
+1. **Tối đa 7 turn**. Hết 7 turn mà không có ai hp = 0 -> Hoà. 
 2. Tất cả số nguyên phải là integer (không dạng 1.0).  
 3. **Không thêm trường mới ngoài JSON schema**.  
 4. playerHp và enemyHp ở turn cuối cùng phải trùng với hpEnd.  
 5. **MÔ TẢ TURN CUỐI (Bám theo ví MÔ TẢ CHIẾN ĐẤU)**: 
     • Nếu có người hp = 0 -> mô tả kết liễu.
-    • Nếu hết 6 turn mà không ai chết -> mô tả hòa. Không được thêm từ mang tính kết liễu.
+    • Nếu hết 7 turn mà không ai chết -> mô tả hòa. Không được thêm từ mang tính kết liễu.
 6. Khi **một bên hp = 0**, trận đấu **kết thúc ngay**, không sinh thêm turn.
 
 ## MÔ TẢ CHIẾN ĐẤU
