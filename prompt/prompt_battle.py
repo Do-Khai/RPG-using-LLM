@@ -28,11 +28,12 @@ Luôn bắt đầu bằng '{' và kết thúc bằng '}'.
 }
 
 ### QUY TẮC BẮT BUỘC:
+1. Tất cả các chỉ số trả về ở dạng interger (1 thay vì là 1.0)
 1. "actor" & "winner" chỉ dùng: "player", "enemy", hoặc "".
 2. Kết thúc trận ngay khi HP một bên = 0.
 3. Tối đa 7 turn.
 4. HP tính theo: HP_new = max(0, HP_old - max(0, damage - damageBlocked)).
-5. Nếu damage ≥ HP còn lại → HP = 0.
+5. Nếu atk lớn hơn hp còn lại, hp cuối cùng **vẫn phải là 0** và kết thúc trận đấu.**
 6. **"hpEnd" phải trùng** playerHp/enemyHp ở lượt cuối.
 7. Khi một bên gục, thêm mô tả mang tính kết liễu trong lượt cuối.
 8. Trong trường hợp hoà nhau (hết turn cuối mà không có ai gục), thêm mô tả mang tính "anh hùng trọng anh hùng".
