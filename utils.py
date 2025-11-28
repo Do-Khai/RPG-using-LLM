@@ -28,7 +28,7 @@ if not API_KEYS:
 )
 async def call_ollama(payload: dict) -> dict:
     """
-    Gửi payload đến Ollama, tự động xoay vòng API key nếu gặp lỗi giới hạn sử dụng.
+    Gửi payload đến Ollama
     """
     last_exception = None
     for i, key in enumerate(API_KEYS):
