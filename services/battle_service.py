@@ -13,18 +13,16 @@ def prepare_payload_battle(req: BattleRequest) -> dict:
     """
     Chuẩn bị payload battle để gửi đến mô hình.
     """
-    player_stats_dict = req.playerStats
-    enemy_stats_dict = req.enemyStats
     system_prompt_content = PROMPT_BATTLE.strip()
     
     user_prompt = f"""
     ---
-    ## ⚙️ THÔNG SỐ
+    ## THÔNG SỐ
     - **Loại trận đấu**: {req.battleType.value}
     - **player**: Tên: {req.playerDisplayName}\n, 
-    Chỉ số: {player_stats_dict}\n
+    Chỉ số: {req.playerStats}\n
     - **enemy**: Tên: {req.enemyDisplayName}\n, 
-    Chỉ số: {enemy_stats_dict}
+    Chỉ số: {req.enemyStats}
     ---
     """
     payload = {
@@ -34,7 +32,8 @@ def prepare_payload_battle(req: BattleRequest) -> dict:
             {"role": "user", "content": user_prompt}
         ],
         "stream": False,
-        "max_token": 800
+        "max_token": 800,
+        "top_p": 0.8,  
     }
     logging.info(f"Gửi payload tới Ollama với player1: {req.playerDisplayName} và player2: {req.enemyDisplayName}" )
     logging.info(f"Thông số của player:\n {req.playerStats}\n")
