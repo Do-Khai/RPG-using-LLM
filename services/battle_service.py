@@ -61,10 +61,10 @@ def _simulate_battle_in_code(player_name: str, player_stats: PlayerStats, enemy_
             "turn": i + 1,
             "actor": actor_role,
             "description": "...",
-            "damage": round(damage, 2),
-            "damageBlocked": round(damage_blocked, 2),
-            "playerHp": round(player.hp, 2),
-            "enemyHp": round(enemy.hp, 2)
+            "damage": round(damage),
+            "damageBlocked": round(damage_blocked),
+            "playerHp": round(player.hp),
+            "enemyHp": round(enemy.hp)
         }
         turns_log.append(turn_data)
 
@@ -101,7 +101,7 @@ def prepare_payload_battle(req: BattleRequest) -> dict:
         req.playerDisplayName, req.playerStats, 
         req.enemyDisplayName, req.enemyStats   
     )
-    battle_log_json_str = json.dumps(battle_log, ensure_ascii=False, indent=2)
+    battle_log_json_str = json.dumps(battle_log, separators=(',', ':'))
 
     # Bước 2: Chuẩn bị payload cho LLM
     system_prompt_content = PROMPT_BATTLE
