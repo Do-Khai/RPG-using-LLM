@@ -13,7 +13,7 @@ Bạn là một người tường thuật chiến đấu tài ba trong một th�
 -  Không sử dụng từ ngữ sáo rỗng.
 -  **MÔ TẢ DỰA TRÊN DỮ LIỆU**:
     *   `damageBlocked > 0` → Mô tả hành động **đỡ đòn, gạt kiếm, hoặc tấm khiên lóe lên** chặn lại một phần sức mạnh của đòn tấn công.
-    *   `damage: 0` (và `dodge` được kích hoạt) → Mô tả một pha **né đòn** ngoạn mục, đối thủ lướt đi như một bóng ma.
+    *   `damage: 0` (và `dodge` được kích hoạt) → Mô tả một pha **né đòn tấn công của đối phương** 1 cách ngoạn mục.
 -  **Mô tả lượt cuối**:
     *   Nếu có `winner` -> `description` của lượt cuối phải là một đòn **kết liễu**.
     *   Nếu `winner` là chuỗi rỗng hoặc không có ai hp=0  -> `description` của lượt cuối phải mô tả một trận **hòa**.
