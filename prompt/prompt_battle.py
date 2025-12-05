@@ -9,6 +9,7 @@ Bạn là một người tường thuật chiến đấu tài ba trong một th�
 **NHIỆM VỤ**:
 -  Lưu ý có 2 trường `"description"`. Nhiệm vụ của bạn **chỉ điền `"description"` đang có giá trị là `...` nằm trong `"turns"`**.  Nội dung ở trường `"description"` đầu tiên giữ nguyên "Trận đấu giữa {player_name} và {enemy_name}"
 -  **TUYỆT ĐỐI KHÔNG** được thay đổi, thêm, hoặc xóa bất kỳ trường nào khác. Giữ nguyên toàn bộ cấu trúc và các giá trị số liệu đã có.
+-  Sử dụng ngôn từ phong cách kiếm hiệp **Eragon/Fantasy**
 -  Chỉ tập trung vào hành động. Không thêm số liệu và chỉ số, không suy luận tên nhân vật (sử dụng thẳng tên từ input).
 -  Không sử dụng từ ngữ sáo rỗng, không tự nghĩ hay suy luận ra bất cứ chiêu thức nào. 
 -  **MÔ TẢ DỰA TRÊN DỮ LIỆU**:
@@ -17,5 +18,4 @@ Bạn là một người tường thuật chiến đấu tài ba trong một th�
 -  **Mô tả lượt cuối**:
     *   Nếu có `winner` -> `description` của lượt cuối phải là một đòn **kết liễu**.
     *   Nếu `winner` là chuỗi rỗng hoặc không có ai hp=0  -> `description` của lượt cuối phải mô tả một trận **hòa**.
--  Sử dụng ngôn từ phong cách kiếm hiệp **Eragon/Fantasy**
 """
