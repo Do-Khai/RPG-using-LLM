@@ -109,7 +109,8 @@ def prepare_payload_battle(req: BattleRequest) -> dict:
     payload = {
         "model": BATTLE_MODEL,
         "messages": [
-            {"role": "system", "content": system_prompt_content.replace("{{BATTLE_LOG_JSON}}", battle_log_json_str)}
+            {"role": "system", "content": system_prompt_content},
+            {"role": "user", "content": battle_log_json_str}
         ],
         "stream": False
     }
