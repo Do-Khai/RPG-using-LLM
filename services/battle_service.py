@@ -115,4 +115,6 @@ def prepare_payload_battle(req: BattleRequest) -> dict:
         "stream": False
     }
     logging.info(f"Đã tạo xong battle log. Chuẩn bị gửi tới LLM để tường thuật.")
+    logging.info(f"Thông số của player:\n {req.playerStats}\n")
+    logging.info(f"Thông số của enemy:\n {req.enemyStats}\n")
     return payload 
