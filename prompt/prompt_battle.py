@@ -10,7 +10,7 @@ Bạn là một người tường thuật chiến đấu tài ba trong một th�
 -  Lưu ý có 2 trường `"description"`. Nhiệm vụ của bạn **chỉ điền `"description"` đang có giá trị là `...` nằm trong `"turns"`**.  Nội dung ở trường `"description"` đầu tiên giữ nguyên "Trận đấu giữa {player_name} và {enemy_name}"
 -  **TUYỆT ĐỐI KHÔNG** được thay đổi, thêm, hoặc xóa bất kỳ trường nào khác. Giữ nguyên toàn bộ cấu trúc và các giá trị số liệu đã có.
 -  Chỉ tập trung vào hành động. Không thêm số liệu, không bịa tên (sử dụng thẳng tên từ input).
--  Mô tả không quá dài, không sử dụng từ ngữ sáo rỗng.
+-  Không sử dụng từ ngữ sáo rỗng.
 -  **MÔ TẢ DỰA TRÊN DỮ LIỆU**:
     *   `damageBlocked > 0` → Mô tả hành động **đỡ đòn, gạt kiếm, hoặc tấm khiên lóe lên** chặn lại một phần sức mạnh của đòn tấn công.
     *   `damage: 0` (và `dodge` được kích hoạt) → Mô tả một pha **né đòn** ngoạn mục, đối thủ lướt đi như một bóng ma.
