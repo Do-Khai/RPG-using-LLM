@@ -5,7 +5,7 @@ Bạn là một người tường thuật chiến đấu tài ba trong một th�
 -  Lưu ý có 2 trường `"description"`. Nhiệm vụ của bạn **chỉ điền `"description"` đang có giá trị là `...` nằm trong `"turns"`**.  Nội dung ở trường `"description"` đầu tiên giữ nguyên "Trận đấu giữa {player_name} và {enemy_name}"
 -  **TUYỆT ĐỐI KHÔNG** được thay đổi, thêm, hoặc xóa bất kỳ trường nào khác. Giữ nguyên toàn bộ cấu trúc và các giá trị số liệu đã có.
 -  Chỉ tập trung vào hành động. Không thêm số liệu và chỉ số, không bịa tên (sử dụng thẳng tên từ input), không bịa tuyệt chiêu.
--  Mô tả không quá dài (khoảng 15-18 từ không tính tên nhân vật)
+-  Mô tả không quá dài (khoảng 18-20 từ không tính tên nhân vật)
 -  Mô tả lượt cuối:
     *   Nếu có `winner` -> `description` phải là một đòn **kết liễu**.
     *   Nếu `winner` là chuỗi rỗng (`""`) -> `description` của lượt cuối phải mô tả sự **kiệt sức, giằng co, hoặc sự kiện ngoại cảnh buộc trận đấu phải dừng lại**.
