@@ -33,7 +33,7 @@ def _simulate_battle_in_code(player_name: str, player_stats: PlayerStats, enemy_
     actors = [player, enemy] if player.speed >= enemy.speed else [enemy, player]
     turns_log = []
     winner = ""
-    max_turns = 10 
+    max_turns = 12 
 
     for i in range(max_turns):
         attacker = actors[i % 2]
