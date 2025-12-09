@@ -101,7 +101,7 @@ def prepare_payload_battle(req: BattleRequest) -> dict:
         req.playerDisplayName, req.playerStats, 
         req.enemyDisplayName, req.enemyStats   
     )
-    battle_log_json_str = json.dumps(battle_log, separators=(',', ':'))
+    battle_log_json_str = json.dumps(battle_log, ensure_ascii=False, indent=2)
 
     # Bước 2: Chuẩn bị payload cho LLM
     system_prompt_content = PROMPT_BATTLE
@@ -109,8 +109,7 @@ def prepare_payload_battle(req: BattleRequest) -> dict:
     payload = {
         "model": BATTLE_MODEL,
         "messages": [
-            {"role": "system", "content": system_prompt_content},
-            {"role": "user", "content": battle_log_json_str}
+            {"role": "system", "content": system_prompt_content.replace("{{BATTLE_LOG_JSON}}", battle_log_json_str)}
         ],
         "stream": False
     }
