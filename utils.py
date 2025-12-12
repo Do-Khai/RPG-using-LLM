@@ -16,9 +16,6 @@ API_KEYS = [
     os.getenv("OLLAMA_KEY_1"),
     os.getenv("OLLAMA_KEY_2"),
     os.getenv("OLLAMA_KEY_3"),
-    os.getenv("OLLAMA_KEY_4"),
-    os.getenv("OLLAMA_KEY_5"),
-    os.getenv("OLLAMA_KEY_6"),
 ]
 
 class KeyManager:
