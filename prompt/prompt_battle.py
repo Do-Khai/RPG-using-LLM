@@ -66,6 +66,12 @@ Trước khi hoàn thành, hãy kiểm tra lại lượt đấu cuối cùng tro
 - Nếu đó là một trận hòa (`winner` là chuỗi rỗng), hãy đảm bảo mô tả của lượt đó có **CHÍNH XÁC 2 CÂU** theo đúng quy tắc đã nêu ở trên.
 - Nếu đó là một đòn kết liễu, hãy đảm bảo mô tả thể hiện sự kết thúc của trận đấu.
 
+## STYLE BLOCK (CỰC QUAN TRỌNG)
+- Mỗi description phải dài tối thiểu 25 từ, có mô tả chuyển động, năng lượng hoặc lực va chạm và những thứ sinh động khác.
+- Phong cách phải giữ ổn định ở tất cả các turn và tất cả các lần thực thi.
+- Nếu mô tả có xu hướng ngắn hoặc đơn giản, hãy mở rộng bằng mô tả không gian, ánh sáng, gió, năng lượng, chuyển động, biểu cảm của nhân vật...
+- Mức độ sáng tạo trong mô tả phải luôn giữ ổn định, không được giảm dần qua các lượt hay các lần thực thi.
+
 Bây giờ, hãy hoàn thiện đối tượng JSON dưới đây:
 {{BATTLE_LOG_JSON}}
 """

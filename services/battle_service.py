@@ -1,14 +1,19 @@
-#services/battle_service.py
+# services/battle_service.py
 from prompt.prompt_battle import PROMPT_BATTLE
 import json
 import logging
 import random
 from utils import BATTLE_MODEL
 from models.battle_schema import BattleRequest, PlayerStats
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+
+logging.basicConfig(
+    level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
+)
+
 
 class Character:
     """Lớp nội bộ để mô phỏng nhân vật trong trận đấu."""
+
     def __init__(self, name: str, stats: PlayerStats):
         self.name = name
         self.hp = stats.hp
@@ -19,7 +24,13 @@ class Character:
         self.dodge = stats.dodge
         self.speed = stats.speed
 
-def _simulate_battle_in_code(player_name: str, player_stats: PlayerStats, enemy_name: str, enemy_stats: PlayerStats) -> dict:
+
+def _simulate_battle_in_code(
+    player_name: str,
+    player_stats: PlayerStats,
+    enemy_name: str,
+    enemy_stats: PlayerStats,
+) -> dict:
     """
     Mô phỏng toàn bộ trận đấu bằng code và trả về một "nhật ký trận đấu" (battle log).
     LLM sẽ chỉ làm nhiệm vụ điền mô tả vào nhật ký này.
@@ -33,7 +44,7 @@ def _simulate_battle_in_code(player_name: str, player_stats: PlayerStats, enemy_
     actors = [player, enemy] if player.speed >= enemy.speed else [enemy, player]
     turns_log = []
     winner = ""
-    max_turns = 12 
+    max_turns = 10
 
     for i in range(max_turns):
         attacker = actors[i % 2]
@@ -56,7 +67,7 @@ def _simulate_battle_in_code(player_name: str, player_stats: PlayerStats, enemy_
                 defender.hp = max(0, defender.hp - final_damage)
 
         # Ghi lại log của lượt đấu
-        actor_role = 'player' if attacker is player else 'enemy'
+        actor_role = "player" if attacker is player else "enemy"
         turn_data = {
             "turn": i + 1,
             "actor": actor_role,
@@ -64,15 +75,15 @@ def _simulate_battle_in_code(player_name: str, player_stats: PlayerStats, enemy_
             "damage": round(damage),
             "damageBlocked": round(damage_blocked),
             "playerHp": round(player.hp),
-            "enemyHp": round(enemy.hp)
+            "enemyHp": round(enemy.hp),
         }
         turns_log.append(turn_data)
 
         if defender.hp <= 0:
             # Gán 'player' hoặc 'enemy' cho người chiến thắng
-            winner = 'player' if attacker is player else 'enemy'
+            winner = "player" if attacker is player else "enemy"
             break
-    
+
     # Nếu không ai thắng sau max_turns, kết quả là hòa
     if not winner:
         winner = ""
@@ -83,23 +94,33 @@ def _simulate_battle_in_code(player_name: str, player_stats: PlayerStats, enemy_
         "description": f"Trận đấu giữa {player_name} và {enemy_name}",
         "status": "DONE",
         "combat": {
-            "player": {"name": player_name, "hpStart": hp_start_player, "hpEnd": round(player.hp)},
-            "enemy": {"name": enemy_name, "hpStart": hp_start_enemy, "hpEnd": round(enemy.hp)},
+            "player": {
+                "name": player_name,
+                "hpStart": hp_start_player,
+                "hpEnd": round(player.hp),
+            },
+            "enemy": {
+                "name": enemy_name,
+                "hpStart": hp_start_enemy,
+                "hpEnd": round(enemy.hp),
+            },
             "turns": turns_log,
-            "winner": winner
-        }
+            "winner": winner,
+        },
     }
     return battle_log
+
 
 def prepare_payload_battle(req: BattleRequest) -> dict:
     """
     Bước 1: Mô phỏng trận đấu bằng code để tạo battle log.
     Bước 2: Chuẩn bị payload với battle log để LLM tường thuật.
     """
-    logging.info(f"Bắt đầu mô phỏng trận đấu giữa {req.playerDisplayName} và {req.enemyDisplayName} bằng code.")
+    logging.info(
+        f"Bắt đầu mô phỏng trận đấu giữa {req.playerDisplayName} và {req.enemyDisplayName} bằng code."
+    )
     battle_log = _simulate_battle_in_code(
-        req.playerDisplayName, req.playerStats, 
-        req.enemyDisplayName, req.enemyStats   
+        req.playerDisplayName, req.playerStats, req.enemyDisplayName, req.enemyStats
     )
     battle_log_json_str = json.dumps(battle_log, ensure_ascii=False, indent=2)
 
@@ -109,11 +130,16 @@ def prepare_payload_battle(req: BattleRequest) -> dict:
     payload = {
         "model": BATTLE_MODEL,
         "messages": [
-            {"role": "system", "content": system_prompt_content.replace("{{BATTLE_LOG_JSON}}", battle_log_json_str)}
+            {
+                "role": "system",
+                "content": system_prompt_content.replace(
+                    "{{BATTLE_LOG_JSON}}", battle_log_json_str
+                ),
+            }
         ],
-        "stream": False
+        "stream": False,
     }
-    logging.info(f"Đã tạo xong battle log. Chuẩn bị gửi tới LLM để tường thuật.")
+    logging.info("Đã tạo xong battle log. Chuẩn bị gửi tới LLM để tường thuật.")
     logging.info(f"Thông số của player:\n {req.playerStats}\n")
     logging.info(f"Thông số của enemy:\n {req.enemyStats}\n")
-    return payload 
+    return payload
