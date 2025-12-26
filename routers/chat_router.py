@@ -7,11 +7,14 @@ import os
 import logging
 import httpx
 import time
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
+logging.basicConfig(
+    level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
+)
 
 
 router = APIRouter()
+
 
 @router.post("/chat", tags=["LLM Generation"])
 async def generate_chat(req: ChatRequest):
@@ -36,29 +39,39 @@ async def generate_chat(req: ChatRequest):
 
         start_time = time.time()
         response = await call_ollama(payload)
-        response_content = response.get("message", {}).get("content", "") or response.get("response", "")
+        response_content = response.get("message", {}).get(
+            "content", ""
+        ) or response.get("response", "")
         end_time = time.time()
         response_time = end_time - start_time
-        logging.info(f"Thời gian phản hồi của mô hình {MODEL_NAME}: {response_time:.2f}s")
-        
+        logging.info(
+            f"Thời gian phản hồi của mô hình {MODEL_NAME}: {response_time:.2f}s"
+        )
+
         if not response_content:
-            raise HTTPException(status_code=500, detail="Ollama trả về response rỗng. Kiểm tra lại model được load và chạy đúng chưa.")
-        
-         # Parse JSON từ response
+            raise HTTPException(
+                status_code=500,
+                detail="Ollama trả về response rỗng. Kiểm tra lại model được load và chạy đúng chưa.",
+            )
+
+        # Parse JSON từ response
         try:
-            start_index = response_content.find('{')
-            end_index = response_content.rfind('}')
+            start_index = response_content.find("{")
+            end_index = response_content.rfind("}")
             if start_index != -1 and end_index != -1 and start_index < end_index:
-                json_str = response_content[start_index:end_index+1]
+                json_str = response_content[start_index : end_index + 1]
                 parsed = json.loads(json_str)
             else:
                 raise ValueError("Không tìm thấy đối tượng JSON hợp lệ trong phản hồi.")
         except (json.JSONDecodeError, ValueError):
-            raise HTTPException(status_code=500, detail=f"Phản hồi từ model không phải JSON hợp lệ: {response_content}")
+            raise HTTPException(
+                status_code=500,
+                detail=f"Phản hồi từ model không phải JSON hợp lệ: {response_content}",
+            )
 
         return parsed
 
-    except HTTPException: 
+    except HTTPException:
         raise
     except Exception as e:
         logging.error(f"Lỗi không mong muốn: {e}")
