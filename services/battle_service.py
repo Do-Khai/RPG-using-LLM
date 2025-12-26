@@ -138,6 +138,7 @@ def prepare_payload_battle(req: BattleRequest) -> dict:
             }
         ],
         "stream": False,
+        "format": "json",
     }
     logging.info("Đã tạo xong battle log. Chuẩn bị gửi tới LLM để tường thuật.")
     logging.info(f"Thông số của player:\n {req.playerStats}\n")

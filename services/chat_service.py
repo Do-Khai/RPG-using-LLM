@@ -1,10 +1,13 @@
 import json
 import logging
-import os
 from prompt.prompt_chat import PROMPT_CHAT
 from models.chat_schema import ChatRequest
 from utils import MODEL_NAME
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+
+logging.basicConfig(
+    level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
+)
+
 
 def prepare_payload_chat(req: ChatRequest) -> dict:
     """
@@ -21,16 +24,14 @@ def prepare_payload_chat(req: ChatRequest) -> dict:
     - **State hiện tại của người chơi**: {json.dumps(req.user_state, ensure_ascii=False)}
     ---
     """
-    messages = [
-        {"role": "system", "content": system_prompt_content}
-    ]
-    messages.extend(req.recent_messages)
-    messages.append(
-        {"role": "user", "content": req.message}
-    )
+    messages = [{"role": "system", "content": system_prompt_content}]
+    if req.recent_messages:
+        messages.extend(req.recent_messages)
+    messages.append({"role": "user", "content": req.message})
     payload = {
         "model": MODEL_NAME,
         "messages": messages,
         "stream": False,
+        "format": "json",
     }
-    return payload 
+    return payload

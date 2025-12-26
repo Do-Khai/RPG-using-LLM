@@ -1,10 +1,13 @@
 import json
 import logging
-import os
 from prompt.prompt_summary import PROMPT_SUMMARY
 from models.summary_schema import SummaryRequest
 from utils import MODEL_NAME
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+
+logging.basicConfig(
+    level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
+)
+
 
 def prepare_payload_summary(req: SummaryRequest) -> dict:
     """
@@ -19,12 +22,11 @@ def prepare_payload_summary(req: SummaryRequest) -> dict:
     - **Story cần tóm tắt thêm**: {json.dumps(req.recent_messages, ensure_ascii=False)}
     ---
     """
-    messages = [
-        {"role": "system", "content": system_prompt_content}
-    ]
+    messages = [{"role": "system", "content": system_prompt_content}]
     payload = {
         "model": MODEL_NAME,
         "messages": messages,
         "stream": False,
+        "format": "json",
     }
-    return payload 
+    return payload
