@@ -3,9 +3,7 @@ from models.chat_schema import ChatRequest
 from services.chat_service import prepare_payload_chat
 from utils import call_ollama, MODEL_NAME
 import json
-import os
 import logging
-import httpx
 import time
 
 logging.basicConfig(
